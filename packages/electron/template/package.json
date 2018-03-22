@@ -1,0 +1,59 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "A general template for an Enact Electron application.",
+  "author": "",
+  "main": "main/index.js",
+  "browser": "renderer/index.js",
+  "productName": "My App",
+  "scripts": {
+    "serve": "nf start",
+    "pack": "enact pack",
+    "pack-p": "enact pack -p",
+    "watch": "enact pack --watch",
+    "electron": "electron main",
+    "rebuild": "electron-rebuild",
+    "stage": "electron-packager . MyApp --ignore=\"(node_modules|renderer|Procfile|.gitignore)\" --overwrite --out bin",
+    "stage-win": "npm run stage -- --platform=win32 --arch=all --icon=main/assets/icon.ico",
+    "stage-mac": "npm run stage -- --platform=darwin --arch=all --icon=main/assets/icon.icns ",
+    "stage-linux": "npm run stage -- --platform=linux --arch=all",
+    "clean": "enact clean bin",
+    "lint": "enact lint  -- --ignore-pattern \"bin/*\" .",
+    "license": "enact license",
+    "test": "enact test start --single-run",
+    "test-watch": "enact test start"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": "",
+  "enact": {
+    "theme": "moonstone",
+    "target": "electron-renderer"
+  },
+  "eslintConfig": {
+    "extends": "enact"
+  },
+  "eslintIgnore": [
+    "node_modules/*",
+    "build/*",
+    "dist/*",
+    "bin/*"
+  ],
+  "dependencies": {
+    "@enact/core": "^1.15.0",
+    "@enact/i18n": "^1.15.0",
+    "@enact/moonstone": "^1.15.0",
+    "@enact/spotlight": "^1.15.0",
+    "@enact/ui": "^1.15.0",
+    "@enact/webos": "^1.15.0",
+    "electron": "^1.0.0",
+    "prop-types": "^15.6.0",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2"
+  },
+  "devDependencies": {
+    "electron-packager": "^11.0.0",
+    "electron-rebuild": "^1.7.3",
+    "foreman": "^2.0.0"
+  }
+}
