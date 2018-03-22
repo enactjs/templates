@@ -1,0 +1,2 @@
+renderer: enact serve
+main: node main/wait-for-server.js

@@ -1,0 +1,25 @@
+{
+  "name": "@enact/templates",
+  "version": "1.0.0",
+  "description": "A collection of Enact-based templates.",
+  "private": true,
+  "author": "Jason Robitaille <jason.robitaille@lge.com>",
+  "repository": "https://github.com/enactjs/templates",
+  "license": "Apache-2.0",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "publish": "lerna publish",
+    "clean": "lerna clean --yes",
+    "lerna": "lerna",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.17.0",
+    "eslint-config-enact": "^1.1.9",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-enact": "^0.1.3",
+    "eslint-plugin-react": "^7.7.0",
+    "lerna": "^2.9.0"
+  }
+}
