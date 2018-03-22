@@ -9,6 +9,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "publish": "lerna publish",
+    "publish-next": "lerna publish --npm-tag=next",
     "clean": "lerna clean --yes",
     "lerna": "lerna",
     "lint": "eslint ."
