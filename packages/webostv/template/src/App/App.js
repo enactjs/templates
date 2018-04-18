@@ -5,6 +5,8 @@ import React from 'react';
 
 import MainPanel from '../views/MainPanel';
 
+import attachErrorHandler from './attachErrorHandler';
+
 import css from './App.less';
 
 const App = kind({
@@ -16,11 +18,9 @@ const App = kind({
 	},
 
 	render: (props) => (
-		<div {...props}>
-			<Panels>
-				<MainPanel />
-			</Panels>
-		</div>
+		<Panels {...props} ref={attachErrorHandler}>
+			<MainPanel />
+		</Panels>
 	)
 });
 
