@@ -1,3 +1,4 @@
+import {onWindowReady} from '@enact/core/snapshot'
 import {error} from '@enact/webos/pmloglib';
 
 // Logs any uncaught exceptions to the system logs for future troubleshooting. Payload can be
@@ -22,16 +23,7 @@ const handleError = (ev) => {
 	// ev.preventDefault();
 };
 
-// Attaches the error handler to the window on mount and removes on unmount
-const attachErrorHandler = (node) => {
-	if (node) {
-		window.addEventListener('error', handleError);
-	} else {
-		window.removeEventListener('error', handleError);
-	}
-};
+onWindowReady(() => {
+	window.addEventListener('error', handleError);
+});
 
-export default attachErrorHandler;
-export {
-	attachErrorHandler
-};
