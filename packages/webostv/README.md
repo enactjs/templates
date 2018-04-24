@@ -1,4 +1,4 @@
-# @enact/template-moonstone
+# @enact/template-webostv
 
 A template generator for @enact/cli to create Enact-based applications for webOS TVs.
 
