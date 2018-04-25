@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "1.0.0",
-  "description": "A general template for an Enact Moonstone application.",
+  "description": "A general template for an Enact Moonstone application for webOS TVs",
   "author": "",
   "main": "src/index.js",
   "scripts": {
@@ -35,8 +35,9 @@
     "@enact/moonstone": ">=2.0.0-alpha <2.0.0",
     "@enact/spotlight": ">=2.0.0-alpha <2.0.0",
     "@enact/ui": ">=2.0.0-alpha <2.0.0",
+    "@enact/webos": ">=2.0.0-alpha <2.0.0",
     "prop-types": "^15.6.0",
-    "react": "^16.3.2",
+    "react": "^16.3.2,
     "react-dom": "^16.3.2"
   }
 }
