@@ -1,6 +1,6 @@
 {
   "name": "@enact/templates",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A collection of Enact-based templates.",
   "private": true,
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
@@ -12,7 +12,7 @@
     "publish-next": "lerna publish --npm-tag=next",
     "clean": "lerna clean --yes",
     "lerna": "lerna",
-    "lint": "eslint ."
+    "lint": "eslint ." 
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
