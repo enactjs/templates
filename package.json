@@ -12,7 +12,7 @@
     "publish-next": "lerna publish --npm-tag=next",
     "clean": "lerna clean --yes",
     "lerna": "lerna",
-    "lint": "eslint ." 
+    "lint": "eslint ."
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
