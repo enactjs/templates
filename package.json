@@ -14,6 +14,9 @@
     "lerna": "lerna",
     "lint": "eslint ."
   },
+  "eslintIgnore": [
+  	"node_modules"
+  ],
   "devDependencies": {
     "babel-eslint": "^8.2.2",
     "eslint": "^4.17.0",
