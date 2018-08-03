@@ -18,7 +18,7 @@
     "stage-mac": "npm run stage -- --platform=darwin --arch=all --icon=main/assets/icon.icns ",
     "stage-linux": "npm run stage -- --platform=linux --arch=all",
     "clean": "enact clean bin",
-    "lint": "enact lint  -- --ignore-pattern \"bin/*\" .",
+    "lint": "enact lint  -- --env=browser,node --ignore-pattern \"bin/*\" .",
     "license": "enact license",
     "test": "enact test start --single-run",
     "test-watch": "enact test start"
@@ -31,7 +31,11 @@
     "target": "electron-renderer"
   },
   "eslintConfig": {
-    "extends": "enact"
+    "extends": "enact",
+    "env": {
+      "browser": true,
+      "node": true
+    }
   },
   "eslintIgnore": [
     "node_modules/*",
