@@ -1,7 +1,7 @@
 {
-  "name": "@enact/template-moonstone",
+  "name": "@enact/template-webostv",
   "version": "2.0.0",
-  "description": "A template generator for Enact Moonstone applications.",
+  "description": "A template generator for Enact applications for webOS TVs",
   "main": "index.js",
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
   "repository": "https://github.com/enactjs/templates",
