@@ -1,6 +1,6 @@
 # @enact/template-moonstone
 
-A template generator for @enact/cli to create Enact-based Cordova applications.
+A template generator for @enact/cli to create Enact-based moonstone applications.
 
 ## Installation
 
