@@ -1,6 +1,6 @@
 # @enact/template-typescript
 
-A template generator for @enact/cli to create Enact-based Typescript moonstone applications.
+A template generator for @enact/cli to create Enact-based Typescript applications.
 
 ## Installation
 

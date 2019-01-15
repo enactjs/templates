@@ -1,7 +1,7 @@
 This project was bootstrapped with [@enact/cli](https://github.com/enactjs/cli).
 
 Below you will find some information on how to perform common tasks.  
-You can find the most recent version of this guide [here](https://github.com/enactjs/templates/blob/master/packages/moonstone/template/README.md).
+You can find the most recent version of this guide [here](https://github.com/enactjs/templates/blob/master/packages/typescript/template/README.md).
 Additional documentation on @enact/cli can be found [here](https://github.com/enactjs/cli/blob/master/docs/index.md).
 
 ## Folder Structure
@@ -17,13 +17,13 @@ my-app/
   tsconfig.json
   src/
     App/
-      App.js
+      App.tsx
       App.less
       package.json
     components/
     views/
-      MainPanel.js
-    index.js
+      MainPanel.tsx
+    index.tsx
     react-app-env.d.ts
   resources/
 ```
