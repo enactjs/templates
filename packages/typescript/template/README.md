@@ -14,6 +14,7 @@ my-app/
   .gitignore
   node_modules/
   package.json
+  tsconfig.json
   src/
     App/
       App.js
@@ -23,13 +24,15 @@ my-app/
     views/
       MainPanel.js
     index.js
+    react-app-env.d.ts
   resources/
 ```
 
 For the project to build, **these files must exist with exact filenames**:
 
 * `package.json` is the core package manifest for the project
-* `src/index.js` is the JavaScript entry point.
+* `tsconfig.json` typescript configuration object
+* `src/index.tsx` is the TypeScript entry point.
 
 You can delete or rename the other files.
 
@@ -65,7 +68,7 @@ Runs the Enact configuration of Eslint on the project for syntax analysis.
 
 ### `npm run test` and `npm run test-watch`
 
-These tasks will execute all valid tests (files that end in `-specs.js`) that are within the project directory. The `test` is a standard single execution pass, while `test-watch` will set up a watcher to re-execute tests when files change.
+These tasks will execute all valid tests (files that end in `-specs.(js|js|ts|tsx)`) that are within the project directory. The `test` is a standard single execution pass, while `test-watch` will set up a watcher to re-execute tests when files change.
 
 ## Enact Build Options
 
@@ -135,7 +138,7 @@ While you can still use `require()` and `module.exports`, we encourage you to us
 
 For example:
 
-### `Button.js`
+### `Button.tsx`
 
 ```js
 import kind from '@enact/core/kind';
@@ -149,7 +152,7 @@ const Button = kind({
 export default Button; // Don’t forget to use export default!
 ```
 
-### `DangerButton.js`
+### `DangerButton.tsx`
 
 
 ```js
@@ -157,7 +160,7 @@ import kind from '@enact/core/kind';
 import Button from './Button'; // Import a component from another file
 
 const DangerButton = kind({
-  render(props) {
+  render(props: object) {
     return <Button {...props} color="red" />;
   }
 });
@@ -189,11 +192,11 @@ This project setup uses [Webpack](https://webpack.github.io/) for handling all a
 }
 ```
 
-### `Button.js`
+### `Button.tsx`
 
 ```js
 import kind from '@enact/core/kind';
-import styles './Button.css'; // Tell Webpack that Button.js uses these styles
+import styles './Button.css'; // Tell Webpack that Button.tsx uses these styles
 
 const Button = kind({
   render() {
