@@ -165,7 +165,7 @@ import kind from '@enact/core/kind';
 import Button from './Button'; // Import a component from another file
 
 const DangerButton = kind({
-  render(props: object) {
+  render(props) {
     return <Button {...props} color="red" />;
   }
 });
