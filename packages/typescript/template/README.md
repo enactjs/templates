@@ -143,7 +143,12 @@ For example:
 ```js
 import kind from '@enact/core/kind';
 
-const Button = kind({
+interface ButtonProps = {
+  color?: string
+};
+
+// kind() accepts a interface representing the props the component accepts
+const Button = kind<ButtonProps>({
   render() {
     // ...
   }

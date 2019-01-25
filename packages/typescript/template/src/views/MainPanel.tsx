@@ -6,7 +6,7 @@ import React from 'react';
 const MainPanel = kind({
 	name: 'MainPanel',
 
-	render: (props: object) => (
+	render: (props) => (
 		<Panel {...props}>
 			<Header title="Hello world!" />
 			<Button>Click me</Button>
