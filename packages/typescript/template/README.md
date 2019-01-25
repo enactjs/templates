@@ -148,7 +148,8 @@ interface ButtonProps = {
 };
 
 // kind() accepts a interface representing the props the component accepts
-const Button = kind<ButtonProps>({
+// You can include support for native DOM attributes as well with a union
+const Button = kind<ButtonProps | HTMLButtonElement>({
   render() {
     // ...
   }
