@@ -15,6 +15,7 @@ my-app/
   node_modules/
   package.json
   tsconfig.json
+  tslint.json
   src/
     App/
       App.tsx
@@ -24,8 +25,9 @@ my-app/
     views/
       MainPanel.tsx
     index.tsx
-    react-app-env.d.ts
   resources/
+  types/
+    react-app-env.d.ts
 ```
 
 For the project to build, **these files must exist with exact filenames**:
