@@ -1,6 +1,6 @@
 This project was bootstrapped with [@enact/cli](https://github.com/enactjs/cli).
 
-Below you will find some information on how to perform common tasks.  
+Below you will find some information on how to perform common tasks.
 You can find the most recent version of this guide [here](https://github.com/enactjs/templates/blob/master/packages/typescript/template/README.md).
 Additional documentation on @enact/cli can be found [here](https://github.com/enactjs/cli/blob/master/docs/index.md).
 
@@ -64,7 +64,7 @@ Deletes previous build fragments from ./dist.
 
 ### `npm run lint`
 
-Runs the Enact configuration of Eslint on the project for syntax analysis.
+Runs syntax analysis on JavaScript files using the Enact configuration of Eslint and on TypeScript files using TSLint. NOTE: For TSLint, no rules are enabled. Update `tslint.json` to add rules.
 
 ### `npm run test` and `npm run test-watch`
 
@@ -99,7 +99,7 @@ For example:
     }
   }
   ...
-} 
+}
 ```
 
 ## Displaying Lint Output in the Editor
@@ -133,7 +133,7 @@ npm install --save <package-name>
 
 ## Importing a Component
 
-This project setup supports ES6 modules thanks to Babel.  
+This project setup supports ES6 modules thanks to Babel.
 While you can still use `require()` and `module.exports`, we encourage you to use [`import` and `export`](http://exploringjs.com/es6/ch_modules.html) instead.
 
 For example:
