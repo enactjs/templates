@@ -41,6 +41,8 @@
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "tslint": "^5.12.1",
+    "tslint-react": "^3.6.0",
     "typescript": "^3.1.6"
   }
 }
