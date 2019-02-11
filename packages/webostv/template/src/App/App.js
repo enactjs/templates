@@ -7,7 +7,7 @@ import MainPanel from '../views/MainPanel';
 
 import './attachErrorHandler';
 
-import css from './App.less';
+import css from './App.module.less';
 
 const App = kind({
 	name: 'App',
