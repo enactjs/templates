@@ -1,7 +1,7 @@
 {
-  "name": "@enact/template-electron",
+  "name": "@enact/template-typescript",
   "version": "2.3.0",
-  "description": "A template generator for Enact Electron applications.",
+  "description": "A template generator for Enact Typescript applications.",
   "main": "index.js",
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
   "repository": "https://github.com/enactjs/templates",
