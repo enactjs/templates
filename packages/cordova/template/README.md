@@ -1,6 +1,6 @@
 This project was bootstrapped with [@enact/cli](https://github.com/enactjs/cli).
 
-Below you will find some information on how to perform common tasks.  
+Below you will find some information on how to perform common tasks.
 You can find the most recent version of this guide [here](https://github.com/enactjs/templates/blob/master/packages/cordova/template/README.md).
 Additional documentation on @enact/cli can be found [here](https://github.com/enactjs/cli/blob/master/docs/index.md).
 
@@ -100,7 +100,7 @@ For example:
     }
   }
   ...
-} 
+}
 ```
 
 ## Displaying Lint Output in the Editor
@@ -120,7 +120,7 @@ You would need to install an ESLint plugin for your editor first.
 Then, you will need to install some packages *globally*:
 
 ```sh
-npm install -g eslint eslint-config-enact eslint-plugin-enact eslint-plugin-react eslint-plugin-babel babel-eslint
+npm install -g eslint eslint-config-enact eslint-plugin-enact eslint-plugin-react eslint-plugin-babel babel-eslint eslint-plugin-jest
 
 ```
 
@@ -134,7 +134,7 @@ npm install --save <package-name>
 
 ## Importing a Component
 
-This project setup supports ES6 modules thanks to Babel.  
+This project setup supports ES6 modules thanks to Babel.
 While you can still use `require()` and `module.exports`, we encourage you to use [`import` and `export`](http://exploringjs.com/es6/ch_modules.html) instead.
 
 For example:
