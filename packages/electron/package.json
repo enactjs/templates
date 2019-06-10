@@ -1,6 +1,6 @@
 {
   "name": "@enact/template-electron",
-  "version": "2.3.3",
+  "version": "3.0.0-pre.1",
   "description": "A template generator for Enact Electron applications.",
   "main": "index.js",
   "author": "Jason Robitaille <jason.robitaille@lge.com>",

@@ -1,6 +1,6 @@
 {
   "name": "@enact/template-moonstone",
-  "version": "2.3.3",
+  "version": "3.0.0-pre.1",
   "description": "A template generator for Enact Moonstone applications.",
   "main": "index.js",
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
