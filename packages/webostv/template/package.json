@@ -18,6 +18,9 @@
   "license": "UNLICENSED",
   "private": true,
   "repository": "",
+  "engines": {
+    "npm" : ">=6.9.0"
+  },
   "enact": {
     "theme": "moonstone"
   },
@@ -36,7 +39,7 @@
     "@enact/spotlight": ">=3.0.0-alpha <3.0.0",
     "@enact/ui": ">=3.0.0-alpha <3.0.0",
     "@enact/webos": ">=3.0.0-alpha <3.0.0",
-    "ilib": "^14.2.0",
+    "ilib": "npm:ilib-webos-tv@^14.2.0-webostv1",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
