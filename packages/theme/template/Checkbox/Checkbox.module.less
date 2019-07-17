@@ -1,0 +1,48 @@
+// Checkbox.module.less
+//
+@import "../styles/mixins.less";
+@import "../styles/skin.less";
+
+// Internally theme our implementation using published classes from ToggleItem and ToggleIcon
+.toggleIcon {
+	.icon {
+		visibility: hidden;
+		margin: 0;
+	}
+
+	&.selected {
+		.icon {
+			visibility: visible;
+		}
+	}
+
+	.applySkins({
+		@size: @my-theme-checkbox-size;
+
+		color: @my-theme-checkbox-text-color;
+		background-color: @my-theme-checkbox-bg-color;
+		width: @size;
+		height: @size;
+		border-radius: @my-theme-checkbox-border-radius;
+
+		.icon {
+			line-height: @size;
+			width: @size;
+			height: @size;
+			font-size: @size;
+		}
+	});
+}
+
+.focus({
+	.toggleIcon {
+		.applySkins({
+			color: @my-theme-checkbox-focus-text-color;
+			background-color: @my-theme-checkbox-focus-bg-color;
+
+			.disabled({
+				opacity: @my-theme-disabled-opacity;
+			});
+		});
+	}
+}, parent);

@@ -1,0 +1,25 @@
+// skin.less
+//
+
+// Themes can decide their own interpretation of what is defined as a "skin".
+// Some themes define a skin as specifically the colors, and leaving all measurements and sizes in
+// the variables.less file. This allows their users to change skins without any layout changes at
+// all, since only colors are swapped out. Other themes have decided a broader implementation is
+// best, having a separate variables file for each skin, so they can do more elaborate changes with
+// each skin. This is why our colors and variables files are separate.
+//
+// To define a new skin, simply duplicate the `:global() {}` block and choose a new skin name that
+// is defined in the Skinnable component.
+//
+// To switch from a colors-&-variables skin approach to a just-colors skin approach, simply move the
+// `@import variables` line above the `:global` line so it allows all skins below to reference the
+// same set of variables.
+.applySkins(@componentRules) when (isruleset(@componentRules)) {
+	&:global(.my-skin) {
+		// Load the my-skin rules into this scope
+		@import "./colors-my-skin.less";
+		@import "./variables-my-skin.less";
+
+		@componentRules();
+	}
+}

@@ -1,0 +1,84 @@
+// MyTheme Base App styles
+//
+
+// Core Rules
+@import "~@enact/ui/styles/core.less";
+
+// MyTheme Internal Rules
+@import "../styles/internal/fonts.less";
+
+// MyTheme Rules
+@import "../styles/mixins.less";
+@import "../styles/skin.less";
+@import "../styles/variables.less";
+
+/* Prevent browser's default focus treatment (at least in Chrome) */
+:focus {
+	outline: none;
+}
+.applySkins({
+
+	// Selected text (like when clicking and dragging the cursor over text)
+	::selection {
+		color: @my-theme-spotlight-text-color;
+		background-color: @my-theme-spotlight-bg-color;
+	}
+
+	// Spotlight
+	// This rule-set applies a generic spottable set of colors to anything with the spottable class
+	// that is a child of a skin. It's a blanket rule for components that don't technically need to
+	// be skinnable themselves, but still need to be focusable and inherit rules from their parent.
+	// The rule below this, should look identical, with the exception of the absence of the `parent`
+	// argument to the focus mixin. This allows that set of rules to prevail over this generic set.
+	//// Inherited Spottable rules (for components that aren't directly skinned)
+	.focus({
+		color: @my-theme-spotlight-text-color;
+		background-color: @my-theme-spotlight-bg-color;
+		background-image: @my-theme-spotlight-bg-image;
+	}, parent);
+	//// Primary spottable rules (for any component with a skin applied to itself)
+	.focus({
+		color: @my-theme-spotlight-text-color;
+		background-color: @my-theme-spotlight-bg-color;
+		background-image: @my-theme-spotlight-bg-image;
+	});
+
+	// Disabled Components
+	.disabled({
+		.vendor-opacity(@my-theme-disabled-opacity);
+
+		// Focused and disabled, must restore their natural opacity, then assign the faded text/content color
+		.focus({
+			.vendor-opacity(1);
+			color: @my-theme-spotlight-disabled-text-color;
+		});
+
+		cursor: default;
+
+		// Disabled children of disabled components
+		.disabled({
+			.vendor-opacity(1);
+		}, parent);
+	});
+});
+
+.root {
+	overflow: hidden;
+
+	&:global(.enact-locale-right-to-left) {
+		direction: rtl;
+	}
+
+	// Skin settings
+	.applySkins({
+		font-family: @my-theme-base-font-family;
+		font-weight: @my-theme-base-font-weight;
+		font-size: @my-theme-base-font-size;
+		font-style: @my-theme-base-font-style;
+		font-variant-ligatures: @my-theme-base-font-ligatures;
+		letter-spacing: @my-theme-base-letter-spacing;
+		color: @my-theme-text-color;
+		background-color: @my-theme-bg-color;
+		background-image: @my-theme-bg-image;
+	});
+}

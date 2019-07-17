@@ -1,0 +1,116 @@
+// Skin colors definitions
+//
+
+// Named Colors
+@my-theme-accent: #48f;
+@my-theme-accent-lighter: lighten(@my-theme-accent, 10%);
+@my-theme-accent-darker: darken(@my-theme-accent, 20%);
+
+@my-theme-highlight: #fc0;
+
+@my-theme-foreground: @my-theme-white;
+@my-theme-background: @my-theme-accent;
+@my-theme-foreground-focus: @my-theme-white;
+@my-theme-background-focus: @my-theme-accent-lighter;
+@my-theme-foreground-active: darken(@my-theme-foreground-focus, 5%);
+@my-theme-background-active: @my-theme-accent-darker;
+
+@my-theme-gradient: linear-gradient(to bottom, fade(white, 40%), transparent);
+@my-theme-text-shadow: 1px 2px 1px rgba(64, 64, 64, 0.5), 0 0 8px rgba(103, 58, 183, 0.5);
+
+@my-theme-darker-gray: #262626;
+@my-theme-dark-gray:   #4d4d4d;
+@my-theme-gray:        #a6a6a6;
+@my-theme-light-gray:  #ededed;
+@my-theme-white:       #fff;
+
+// Component color assignments
+//
+
+// ThemeDecorator
+@my-theme-text-color:        @my-theme-foreground;
+@my-theme-bg-color:          #44a8db;
+@my-theme-bg-image:          linear-gradient(0deg, #0d233c 0%, #454d6f 25%, #897a9c 45%, #562736 46%, #d5524a 48%, #d3a398 60%, #9eb3c4 75%, #54acd7 90%, #44a8db 100%);
+@my-theme-border-color:      @my-theme-accent-darker;
+@my-theme-title-text-color:  @my-theme-white;
+
+// Disabled Opacity
+// ---------------------------------------
+@my-theme-disabled-opacity: 0.6;
+@my-theme-disabled-translucent-opacity: 0.4;
+
+// Spotlight and State
+// ---------------------------------------
+@my-theme-spotlight-text-color:           @my-theme-white;
+@my-theme-spotlight-bg-color:             @my-theme-background-focus;
+@my-theme-spotlight-bg-image:             @my-theme-gradient;
+@my-theme-spotlight-border-color:         transparent;
+@my-theme-spotlight-disabled-text-color:  fade(@my-theme-spotlight-text-color, 40%);
+
+// BodyText
+// ---------------------------------------
+@my-theme-bodytext-text-shadow:  @my-theme-text-shadow;
+
+// Button
+// ---------------------------------------
+@my-theme-button-text-color:           @my-theme-foreground;
+@my-theme-button-bg-color:             @my-theme-background;
+@my-theme-button-bg-image:             @my-theme-gradient;
+@my-theme-button-text-shadow:          @my-theme-text-shadow;
+@my-theme-button-border-color:         @my-theme-border-color;
+@my-theme-button-focus-text-color:     @my-theme-foreground-focus;
+@my-theme-button-focus-bg-color:       @my-theme-background-focus;
+@my-theme-button-focus-bg-image:       @my-theme-button-bg-image;
+@my-theme-button-active-text-color:    @my-theme-foreground-active;
+@my-theme-button-active-bg-color:      @my-theme-background-active;
+@my-theme-button-active-bg-image:      @my-theme-button-bg-image;
+@my-theme-button-selected-text-color:  @my-theme-foreground-active;
+@my-theme-button-selected-bg-color:    @my-theme-background-active;
+@my-theme-button-selected-bg-image:    @my-theme-button-bg-image;
+
+// Checkbox
+// ---------------------------------------
+@my-theme-checkbox-text-color:        @my-theme-white;
+@my-theme-checkbox-bg-color:          fade(@my-theme-white, 22%);
+@my-theme-checkbox-focus-text-color:  @my-theme-spotlight-text-color;
+@my-theme-checkbox-focus-bg-color:    fade(@my-theme-white, 40%);
+
+// Heading
+// ---------------------------------------
+@my-theme-heading-text-color:    @my-theme-text-color;
+@my-theme-heading-text-shadow:   @my-theme-text-shadow;
+@my-theme-heading-border-color:  @my-theme-border-color;
+
+// Icon
+// ---------------------------------------
+@my-theme-icon-color:  @my-theme-text-color;
+
+// Item
+// ---------------------------------------
+@my-theme-item-text-color:        @my-theme-foreground;
+@my-theme-item-bg-color:          transparent;
+@my-theme-item-text-shadow:       @my-theme-text-shadow;
+@my-theme-item-focus-text-color:  @my-theme-spotlight-text-color;
+@my-theme-item-focus-bg-color:    @my-theme-spotlight-bg-color;
+
+// Panels
+// ---------------------------------------
+@my-theme-panels-background-color:  fade(black, 30%);
+
+// RadioItem
+// ---------------------------------------
+@my-theme-radioitem-text-color: @my-theme-item-text-color;
+@my-theme-radioitem-focus-text-color: @my-theme-item-text-color;
+@my-theme-radioitem-separator-border-color: @my-theme-heading-border-color;
+@my-theme-radioitem-icon-border-color: @my-theme-foreground-focus;
+@my-theme-radioitem-icon-bg-color: transparent;
+@my-theme-radioitem-icon-bg-image: linear-gradient(to top, white, transparent);
+@my-theme-radioitem-icon-focus-color: fade(@my-theme-foreground-focus, 50%);
+@my-theme-radioitem-icon-focus-bg-color: @my-theme-radioitem-icon-bg-color;
+@my-theme-radioitem-icon-focus-bg-image: @my-theme-radioitem-icon-bg-image;
+@my-theme-radioitem-icon-selected-color: @my-theme-background-active;
+@my-theme-radioitem-icon-selected-bg-color: @my-theme-radioitem-icon-bg-color;
+@my-theme-radioitem-icon-selected-bg-image: linear-gradient(to bottom, white, transparent);
+@my-theme-radioitem-icon-selected-focus-color: @my-theme-background-active;
+@my-theme-radioitem-icon-selected-focus-bg-color: @my-theme-radioitem-icon-selected-bg-color;
+@my-theme-radioitem-icon-selected-focus-bg-image: @my-theme-radioitem-icon-selected-bg-image;

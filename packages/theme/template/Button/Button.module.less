@@ -1,0 +1,99 @@
+// Button.module.less
+//
+@import "../styles/mixins.less";
+@import "../styles/variables.less";
+@import "../styles/skin.less";
+
+.button {
+	.applySkins({
+		height: @my-theme-button-height;
+		min-width: @my-theme-button-height;
+		padding: @my-theme-button-padding;
+		margin: @my-theme-button-margin;
+		box-sizing: border-box;
+		vertical-align: middle;
+		font-size: @my-theme-button-font-size;
+		font-weight: @my-theme-button-font-weight;
+		letter-spacing: @my-theme-button-letter-spacing;
+		text-indent: @my-theme-button-letter-spacing;  // Keep the text centered
+
+		.bg {
+			background-color: @my-theme-button-bg-color;
+			background-image: @my-theme-button-bg-image;
+			border-color: @my-theme-button-border-color;
+			border-style: @my-theme-button-border-style;
+			border-width: @my-theme-button-border-width;
+			border-radius: @my-theme-button-border-radius;
+			transition: @my-theme-button-bg-transition;
+		}
+
+		.client {
+			padding: @my-theme-button-border-width;	// We match the amount removed by the line-height above, so the text doesn't overlap the border
+			color: @my-theme-button-text-color;
+			text-shadow: @my-theme-button-text-shadow;
+
+			.icon {
+				-webkit-margin-start: 0;
+			}
+		}
+
+		&.minWidth {
+			padding: 0;
+
+			.client .icon {
+				margin: 0;
+			}
+		}
+
+		&.small {
+			font-size: @my-theme-button-small-font-size;
+			font-weight: @my-theme-button-small-font-weight;
+			letter-spacing: @my-theme-button-small-letter-spacing;
+			height: @my-theme-button-small-height;
+			min-width: @my-theme-button-small-height;
+			line-height: (@my-theme-button-small-height - (2 * @my-theme-button-border-width));
+			margin: @my-theme-button-small-margin;
+			padding: @my-theme-button-small-padding;
+		}
+
+		&.selected {
+			.bg {
+				background-color: @my-theme-button-selected-bg-color;
+			}
+
+			&,
+			.client {
+				color: @my-theme-button-selected-text-color;
+			}
+		}
+
+		.focus({
+			background-color: transparent;
+			background-image: none;
+
+			.bg {
+				background-color: @my-theme-button-focus-bg-color;
+				background-image: @my-theme-button-focus-bg-image;
+			}
+
+			&,
+			.client {
+				color: @my-theme-button-focus-text-color;
+			}
+
+			&.pressed,
+			&:active {
+				.bg {
+					background-color: @my-theme-button-active-bg-color;
+					background-image: @my-theme-button-active-bg-image;
+					transform: @my-theme-button-pressed-transform;
+				}
+
+				&,
+				.client {
+					color: @my-theme-button-active-text-color;
+				}
+			}
+		});
+	});
+}

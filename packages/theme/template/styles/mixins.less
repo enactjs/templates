@@ -1,0 +1,23 @@
+//
+// MyTheme Theme Style Mixins for
+// defining a collection of styles once, and reusing them in multiple places.
+//
+
+@import "~@enact/spotlight/styles/mixins.less";
+@import "~@enact/ui/styles/mixins.less";
+@import "./variables.less";
+
+.position (@trbl) when (length(@trbl) = 4) {
+	top: extract(@trbl, 1);
+	right: extract(@trbl, 2);
+	bottom: extract(@trbl, 3);
+	left: extract(@trbl, 4);
+}
+
+.my-theme-item-sizing() {
+	font-size: @my-theme-item-font-size;
+	font-weight: @my-theme-item-font-weight;
+	line-height: @my-theme-item-height;
+	padding-left: @my-theme-item-side-outset;
+	padding-right: @my-theme-item-side-outset;
+}

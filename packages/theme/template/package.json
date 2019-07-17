@@ -1,0 +1,46 @@
+{
+  "name": "my-theme",
+  "version": "1.0.0",
+  "description": "A theme library for Enact, containing a variety of UI components.",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "enact clean",
+    "lint": "enact lint",
+    "test": "enact test",
+    "test-watch": "enact test --watch",
+    "transpile": "enact transpile"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": "",
+  "enact": {
+    "ri": {
+      "baseSize": 24
+    }
+  },
+  "eslintConfig": {
+    "extends": "enact"
+  },
+  "eslintIgnore": [
+    "node_modules/*",
+    "build/*",
+    "dist/*"
+  ],
+  "dependencies": {
+    "@enact/core": ">=3.0.0-alpha <3.0.0",
+    "@enact/i18n": ">=3.0.0-alpha <3.0.0",
+    "@enact/spotlight": ">=3.0.0-alpha <3.0.0",
+    "@enact/ui": ">=3.0.0-alpha <3.0.0",
+    "classnames": "^2.2.6",
+    "prop-types": "^15.6.2",
+    "ramda": "^0.25.0",
+    "react": "^16.0.0"
+  },
+  "peerDependencies": {
+    "ilib": "^14.2.0 || ^14.2.0-webostv1"
+  },
+  "devDependencies": {
+    "ilib": "^14.2.0"
+  }
+}
