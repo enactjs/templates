@@ -1,4 +1,44 @@
+const fs = require('fs');
+const path = require('path');
+
+const capitalize = name => name.charAt(0).toUpperCase() + name.slice(1);
+const capEachWord = text => text.split(/[-_\s]/).map(capitalize).join('');
+
+const sourceFiles => (dir, action) {
+	const list = fs.readdirSync(dir);
+	list.forEach(item => {
+		const itemPath = path.join(dir, item);
+		if (fs.statSync(itemPath).isDirectory()) {
+			sourceFiles(itemPath, action);
+		} else if (/\.(css|less|js|jsx|md)$/.test(item)) {
+			action(itemPath);
+		}
+	})
+};
+
 module.exports = {
+	setup: ({defaultGenerator, directory, name, skin = 'default-skin'}) => {
+		defaultGenerator.setup({directory, name});
+		sourceFiles(directory, file => {
+			const text = fs.readFileSync(file, {encoding: 'utf8'});
+			text = text.replace(/my-theme/g, name);
+			text = text.replace(/MyTheme/g, capEachWord(name));
+			text = text.replace(/my-skin/g, skin);
+			text = text.replace(/MySkin/g, capEachWord(skin));
+			fs.writeFileSync(file, text, {encoding: 'utf8'});
+		});
+		[
+			'colors-my-skin.less',
+			'variables-my-skin.less'
+		].forEach(file => {
+			const newSkinFile = file.replace('my-skin', skin);
+			fs.renameSync(
+				path.join(directory, 'styles', file),
+				path.join(directory, 'styles', newSkinFile)
+			);
+		})
+		
+	},
 	complete: ({directory, name}) => {
 		const meta = require('./package.json');
 		const pre = ['next', 'pre', 'alpha', 'beta', 'rc'];
