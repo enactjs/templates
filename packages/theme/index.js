@@ -1,10 +1,11 @@
 const fs = require('fs');
 const path = require('path');
+const chalk = require('chalk');
 
 const capitalize = name => name.charAt(0).toUpperCase() + name.slice(1);
 const capEachWord = text => text.split(/[-_\s]/).map(capitalize).join('');
 
-const sourceFiles => (dir, action) {
+const sourceFiles = (dir, action) => {
 	const list = fs.readdirSync(dir);
 	list.forEach(item => {
 		const itemPath = path.join(dir, item);
@@ -20,7 +21,7 @@ module.exports = {
 	setup: ({defaultGenerator, directory, name, skin = 'default-skin'}) => {
 		defaultGenerator.setup({directory, name});
 		sourceFiles(directory, file => {
-			const text = fs.readFileSync(file, {encoding: 'utf8'});
+			let text = fs.readFileSync(file, {encoding: 'utf8'});
 			text = text.replace(/my-theme/g, name);
 			text = text.replace(/MyTheme/g, capEachWord(name));
 			text = text.replace(/my-skin/g, skin);
@@ -32,12 +33,10 @@ module.exports = {
 			'variables-my-skin.less'
 		].forEach(file => {
 			const newSkinFile = file.replace('my-skin', skin);
-			fs.renameSync(
-				path.join(directory, 'styles', file),
-				path.join(directory, 'styles', newSkinFile)
-			);
+			const oldPath = path.join(directory, 'styles', file);
+			const newPath = path.join(directory, 'styles', newSkinFile);
+			fs.renameSync(oldPath, newPath);
 		})
-		
 	},
 	complete: ({directory, name}) => {
 		const meta = require('./package.json');
@@ -47,7 +46,7 @@ module.exports = {
 					+ 'contain unstable or unfinished APIs.');
 			console.log();
 		}
-		
+
 		// After everything is complete, output message to user
 		console.log();
 		console.log('Success! Created ' + name + ' at ' + directory);
