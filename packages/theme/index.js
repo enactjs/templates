@@ -17,9 +17,20 @@ const sourceFiles = (dir, action) => {
 	})
 };
 
+// Temporary fallback until ENYO-6133 is merged
+console.log = (log => (data, ...rest) =>
+	typeof data === 'undefined'
+		? log()
+		: typeof data === 'string'
+			? log(data.replace(/Enact app/, 'Enact theme'), ...rest)
+			: log.call(this, data, ...rest))(console.log);
+
 module.exports = {
+	type: 'theme',
 	setup: ({defaultGenerator, directory, name, skin = 'default-skin'}) => {
+		// Execute default setup stage
 		defaultGenerator.setup({directory, name});
+		// Update source code files to use user-defined theme/skin names
 		sourceFiles(directory, file => {
 			let text = fs.readFileSync(file, {encoding: 'utf8'});
 			text = text.replace(/my-theme/g, name);
@@ -28,6 +39,7 @@ module.exports = {
 			text = text.replace(/MySkin/g, capEachWord(skin));
 			fs.writeFileSync(file, text, {encoding: 'utf8'});
 		});
+		// Rename skin stylesheets according to skin name
 		[
 			'colors-my-skin.less',
 			'variables-my-skin.less'
@@ -39,6 +51,7 @@ module.exports = {
 		})
 	},
 	complete: ({directory, name}) => {
+		// Output a notice when using an unstable template release with prerelease Enact
 		const meta = require('./package.json');
 		const pre = ['next', 'pre', 'alpha', 'beta', 'rc'];
 		if (pre.some(id => meta.version.includes(id))) {
@@ -58,6 +71,18 @@ module.exports = {
 		console.log('		Starts the test runner.');
 		console.log(chalk.cyan('	npm run lint'));
 		console.log('		Lints the source code.');
+		console.log();
+		console.log('We suggest that you begin by typing:');
+		if (path.resolve(process.cwd()) !== path.resolve(directory)) {
+			console.log(chalk.cyan('	cd ' + path.relative(process.cwd(), directory)));
+		}
+		console.log('	' + chalk.cyan('npm run transpile'));
+		console.log('	' + chalk.cyan('npm link build'));
+		console.log('This will build your theme library into ES5/CSS and then link that '
+			+ 'output into the global NPM userspace, where you can then '
+			+ chalk.cyan('npm link ' + name) + ' to link the library into an app. '
+			+ 'Re-transpile anytime the theme is updated your app will automatically '
+			+ 'receive those changes.');
 		console.log();
 		console.log('Have fun!');
 	}
