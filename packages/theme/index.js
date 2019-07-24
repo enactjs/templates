@@ -4,6 +4,7 @@ const chalk = require('chalk');
 
 const capitalize = name => name.charAt(0).toUpperCase() + name.slice(1);
 const capEachWord = text => text.split(/[-_\s]/).map(capitalize).join('');
+const ilibVar = name => `ILIB_${name.toUpperCase().replace(/[-_\s]/g, '_')}_PATH`;
 
 const sourceFiles = (dir, action) => {
 	const list = fs.readdirSync(dir);
@@ -30,15 +31,6 @@ module.exports = {
 	setup: ({defaultGenerator, directory, name, skin = 'default-skin'}) => {
 		// Execute default setup stage
 		defaultGenerator.setup({directory, name});
-		// Update source code files to use user-defined theme/skin names
-		sourceFiles(directory, file => {
-			let text = fs.readFileSync(file, {encoding: 'utf8'});
-			text = text.replace(/my-theme/g, name);
-			text = text.replace(/MyTheme/g, capEachWord(name));
-			text = text.replace(/my-skin/g, skin);
-			text = text.replace(/MySkin/g, capEachWord(skin));
-			fs.writeFileSync(file, text, {encoding: 'utf8'});
-		});
 		// Rename skin stylesheets according to skin name
 		[
 			'colors-my-skin.less',
@@ -48,7 +40,17 @@ module.exports = {
 			const oldPath = path.join(directory, 'styles', file);
 			const newPath = path.join(directory, 'styles', newSkinFile);
 			fs.renameSync(oldPath, newPath);
-		})
+		});
+		// Update source code files to use user-defined theme/skin names
+		sourceFiles(directory, file => {
+			let text = fs.readFileSync(file, {encoding: 'utf8'});
+			text = text.replace(/my-theme/g, name);
+			text = text.replace(/MyTheme/g, capEachWord(name));
+			text = text.replace(/MyTheme/g, capEachWord(name));
+			text = text.replace(/ILIB_MY_THEME_PATH/g, ilibVar(name));
+			text = text.replace(/MySkin/g, capEachWord(skin));
+			fs.writeFileSync(file, text, {encoding: 'utf8'});
+		});
 	},
 	complete: ({directory, name}) => {
 		// Output a notice when using an unstable template release with prerelease Enact
