@@ -29,6 +29,7 @@ console.log = (log => (data, ...rest) =>
 module.exports = {
 	type: 'theme',
 	setup: ({defaultGenerator, directory, name, skin = 'default-skin'}) => {
+		skin = skin.replace(/ /g, '-').toLowerCase();
 		// Execute default setup stage
 		defaultGenerator.setup({directory, name});
 		// Rename skin stylesheets according to skin name
@@ -49,6 +50,7 @@ module.exports = {
 			text = text.replace(/MyTheme/g, capEachWord(simpleName));
 			text = text.replace(/MyTheme/g, capEachWord(simpleName));
 			text = text.replace(/ILIB_MY_THEME_PATH/g, ilibVar(simpleName));
+			text = text.replace(/my-skin/g, skin);
 			text = text.replace(/MySkin/g, capEachWord(skin));
 			fs.writeFileSync(file, text, {encoding: 'utf8'});
 		});
