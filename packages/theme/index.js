@@ -42,12 +42,13 @@ module.exports = {
 			fs.renameSync(oldPath, newPath);
 		});
 		// Update source code files to use user-defined theme/skin names
+		const simpleName = path.basename(name);
 		sourceFiles(directory, file => {
 			let text = fs.readFileSync(file, {encoding: 'utf8'});
-			text = text.replace(/my-theme/g, name);
-			text = text.replace(/MyTheme/g, capEachWord(name));
-			text = text.replace(/MyTheme/g, capEachWord(name));
-			text = text.replace(/ILIB_MY_THEME_PATH/g, ilibVar(name));
+			text = text.replace(/my-theme/g, simpleName);
+			text = text.replace(/MyTheme/g, capEachWord(simpleName));
+			text = text.replace(/MyTheme/g, capEachWord(simpleName));
+			text = text.replace(/ILIB_MY_THEME_PATH/g, ilibVar(simpleName));
 			text = text.replace(/MySkin/g, capEachWord(skin));
 			fs.writeFileSync(file, text, {encoding: 'utf8'});
 		});
