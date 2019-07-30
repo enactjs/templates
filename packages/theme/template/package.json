@@ -38,7 +38,7 @@
     "react": "^16.0.0"
   },
   "peerDependencies": {
-    "ilib": "^14.2.0"
+    "ilib": "^14.2.0 || ^14.2.0-webostv1"
   },
   "devDependencies": {
     "ilib": "^14.2.0"

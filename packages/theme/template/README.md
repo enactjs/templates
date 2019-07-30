@@ -45,28 +45,8 @@ The way we've defined a "theme" vs. a "skin" is that a theme includes all of the
 The starter theme comes with one skin (`my-skin`) and the variables and colors for it are found in `variables-my-skin.less` and `colors-my-skin.less`, respectively.
 
 ## Customizing
-
-### Copy
-
-The easiest way to get a fresh copy is to clone the [`my-theme` repo](https://github.com/enactjs/my-theme.git).
-
-It is recommended to choose a new name for the theme and use it as the project directory for the copy.
-
-```
-git clone https://github.com/enactjs/my-theme.git uranium
-```
-
-### Rename
-
-Globally replace instances of `my-theme` with the package name of your theme and instances of `MyTheme` with the name of your theme.
-
-Following the "uranium" example, use `uranium` and `Uranium`, respectively.
-
-Theme developers may also want to change the name of the default skin as part of the rename process.  Globally replace `my-skin` with something else, such as `proton`, and update the `variables-my-skin.less` and `colors-my-skin.less` file names as appropriate.
-
-### Add New Functionality
-
-#### Components
+ 
+### Components
 
 Occasionally, the need for a new component arises.  The `@enact/ui` module provides a wide range of base components which can be used to create new components for the starter theme.
 
@@ -74,7 +54,7 @@ The general procedure is to identify the base component(s) and/or behavior(s) th
 
 It can be helpful to look at other Enact modules' ([`@enact/agate`](https://github.com/enactjs/agate), [`@enact/moonstone`](https://github.com/enactjs/enact/tree/master/packages/moonstone), etc.) components to see if there is something that can be used as the start of a new component implementation.
 
-#### Skins
+### Skins
 
 The `styles/skin.less` file sets up the named skins with their respective variables and color values.  It uses a mixin (`applySkins` in `styles/mixins.less`) to match a classname that is equal to a component's `skin` prop, imports the skin colors and variables, then applies the ruleset provided.
 
@@ -118,5 +98,5 @@ Then, add a new entry to `skin.less` with the new skin name.
 
 Next, create the `variables-neutron.less` and `colors-neutron.less` files and populate them with the variables and colors for the new skin.
 
-Finally, give your app a `skin` prop (`"proton"` or `"neutron"`) and wrap it in your `ThemeDecorator`.  If you don't supply the `skin` prop, it will use a default value of `"proton"` or whatever was specified when renaming the skin.
+Finally, give your app a `skin` prop (`"proton"` or `"neutron"`) and wrap it in your `ThemeDecorator`.  If you don't supply the `skin` prop, it will use a default value of `"proton"` or whatever was specified for the default skin when the template was used to create a new theme.
 

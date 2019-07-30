@@ -47,7 +47,7 @@ const defaultConfig = {
  * [Skins]{@link ui/Skinnable} provide a way to change the coloration of your app. Only one skin
  * ("my-skin") is included with this theme. It is currently set as the default so you don't need to
  * set anything yet. Use the `skin` property to assign a skin when or if you add more.
- * Ex: `<DecoratedApp skin="light" />`
+ * Ex: `<DecoratedApp skin="my-skin-light" />`
  *
  * @class ThemeDecorator
  * @memberof my-theme/ThemeDecorator
