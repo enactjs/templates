@@ -24,6 +24,8 @@ Most of the components in the starter theme are built from base components provi
 * `ToggleIcon` - an `Icon` with `ui/Toggleable` behavior
 * `ToggleItem` - an `Item` with `ui/Toggleable` behavior
 
+There is also an internal implementation for `$L` (an `ilib` translation module) that can be used by theme components to provide translations.
+
 ### Behaviors
 
 The Enact framework has several modules that provide various behaviors.  The starter theme applies the following behaviors to the wrapped app by default:
