@@ -5,20 +5,20 @@ A template generator for `@enact/cli` to create Enact-based theme libraries.
 ## Installation
 
 The Enact CLI itself can install this via NPM or git URI.
-```
+```bash
 enact template install @enact/template-theme
 ```
 
-## Usage 
+## Usage
 
 Once installed, you can specify the `theme` template in the creation command:
-```
+```bash
 enact create -t theme uranium
 ```
 This will create a new copy of the starter theme in the `uranium` directory.  All references to the original theme's name, LESS variables, etc. will be updated to the appropriate values for `uranium`.
 
 The starter theme comes with one skin, `default-skin`, and this can be updated on creation as well by passing the `--skin` flag:
-```
+```bash
 enact create -t theme uranium --skin proton
 ```
 

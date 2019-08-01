@@ -47,7 +47,7 @@ The way we've defined a "theme" vs. a "skin" is that a theme includes all of the
 The starter theme comes with one skin (`my-skin`) and the variables and colors for it are found in `variables-my-skin.less` and `colors-my-skin.less`, respectively.
 
 ## Customizing
- 
+
 ### Components
 
 Occasionally, the need for a new component arises.  The `@enact/ui` module provides a wide range of base components which can be used to create new components for the starter theme.
@@ -70,7 +70,7 @@ const defaultConfig = {
 	}
 };
 ...
-``` 
+```
 
 Then, add a new entry to `skin.less` with the new skin name.
 ```less
@@ -101,4 +101,3 @@ Then, add a new entry to `skin.less` with the new skin name.
 Next, create the `variables-neutron.less` and `colors-neutron.less` files and populate them with the variables and colors for the new skin.
 
 Finally, give your app a `skin` prop (`"proton"` or `"neutron"`) and wrap it in your `ThemeDecorator`.  If you don't supply the `skin` prop, it will use a default value of `"proton"` or whatever was specified for the default skin when the template was used to create a new theme.
-

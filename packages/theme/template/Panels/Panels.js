@@ -1,6 +1,6 @@
 /**
- * Exports the {@link my-theme/Panels.Panels} component.  A `Panels` component's
- * children are typically {@link my-theme/Panels.Panel} components.
+ * MyTheme styled Panels component.  A `Panels` component's children are typically
+ * {@link my-theme/Panels.Panel} components.
  *
  * @example
  * <Panels>
