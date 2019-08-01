@@ -38,6 +38,8 @@ The Enact framework has several modules that provide various behaviors.  The sta
 
 The Enact framework uses [LESS](http://lesscss.org/) to create the styles that are applied to components.  Theme-wide variables/rules that should apply to all skins in the theme are kept in files in the `styles` directory.  Developers can mostly stick to `variables.less`, but additional functions can be added to `mixins.less`.
 
+The theme components use these variables and functions in their specific `*.module.less` files located in each component's source directory.
+
 #### Skins
 
 The way we've defined a "theme" vs. a "skin" is that a theme includes all of the components, behaviors, and collections of skins, while a skin is purely the styling, the appearance of those components.  Think of a theme as the model of a car and the skin as its paint job.
