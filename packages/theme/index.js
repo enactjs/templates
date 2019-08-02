@@ -12,19 +12,11 @@ const sourceFiles = (dir, action) => {
 		const itemPath = path.join(dir, item);
 		if (fs.statSync(itemPath).isDirectory()) {
 			sourceFiles(itemPath, action);
-		} else if (/\.(css|less|js|jsx|md)$/.test(item)) {
+		} else if (/\.(css|less|js|jsx|ts|tsx|md)$/.test(item)) {
 			action(itemPath);
 		}
 	})
 };
-
-// Temporary fallback until ENYO-6133 is merged
-console.log = (log => (data, ...rest) =>
-	typeof data === 'undefined'
-		? log()
-		: typeof data === 'string'
-			? log(data.replace(/Enact app/, 'Enact theme'), ...rest)
-			: log.call(this, data, ...rest))(console.log);
 
 module.exports = {
 	type: 'theme',
