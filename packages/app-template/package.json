@@ -1,0 +1,15 @@
+{
+  "name": "@enact/template-app-template",
+  "version": "3.0.0-pre.2",
+  "description": "A template generator for Enact CLI app templates.",
+  "main": "index.js",
+  "author": "Jason Robitaille <jason.robitaille@lge.com>",
+  "repository": "https://github.com/enactjs/templates",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=6.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
