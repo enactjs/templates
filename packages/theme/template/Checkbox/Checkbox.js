@@ -42,7 +42,7 @@ const CheckboxBase = kind({
 		/**
 		 * The icon displayed when `selected`.
 		 *
-		 * @see my-theme/Icon.Icon.children
+		 * @see {@link my-theme/Icon.Icon.children}
 		 * @type {String|Object}
 		 * @default	'check'
 		 * @public
