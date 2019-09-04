@@ -33,12 +33,12 @@
     "dist/*"
   ],
   "dependencies": {
-    "@enact/core": ">=3.0.0-alpha <3.0.0",
-    "@enact/i18n": ">=3.0.0-alpha <3.0.0",
-    "@enact/moonstone": ">=3.0.0-alpha <3.0.0",
-    "@enact/spotlight": ">=3.0.0-alpha <3.0.0",
-    "@enact/ui": ">=3.0.0-alpha <3.0.0",
-    "@enact/webos": ">=3.0.0-alpha <3.0.0",
+    "@enact/core": "^3.0.0",
+    "@enact/i18n": "^3.0.0",
+    "@enact/moonstone": "^3.0.0",
+    "@enact/spotlight": "^3.0.0",
+    "@enact/ui": "^3.0.0",
+    "@enact/webos": "^3.0.0",
     "ilib": "npm:ilib-webos-tv@^14.2.0-webostv1",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
