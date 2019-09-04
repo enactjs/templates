@@ -1,0 +1,21 @@
+// Heading.module.less
+//
+@import "../styles/skin.less";
+
+.heading {
+	.applySkins({
+		font-family: @my-theme-heading-font-family;
+		font-weight: @my-theme-heading-font-weight;
+		color: @my-theme-heading-text-color;
+		border-bottom: @my-theme-heading-border-width solid transparent;
+		margin: 0 @my-theme-spotlight-outset (1.5 * @my-theme-spotlight-outset) @my-theme-spotlight-outset;
+		min-height: (1.5 * @my-theme-spotlight-outset);
+		letter-spacing: @my-theme-heading-letter-spacing;
+		line-height: @my-theme-heading-line-height;
+		text-shadow: @my-theme-heading-text-shadow;
+
+		&.showLine {
+			border-bottom-color: @my-theme-heading-border-color;
+		}
+	});
+}

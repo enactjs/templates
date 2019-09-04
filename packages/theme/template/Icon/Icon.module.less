@@ -1,0 +1,29 @@
+// Icon.module.less
+//
+@import "../styles/skin.less";
+// Import external font and material-icon class
+@import (css) url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
+
+.icon {
+	color: inherit;
+	background-repeat: no-repeat;
+	text-align: center;
+	position: relative;
+
+	.applySkins({
+		width: @my-theme-icon-size;
+		height: @my-theme-icon-size;
+		background-position: center -((@my-theme-icon-sprite-size - @my-theme-icon-size) / 2);
+		background-size: @my-theme-icon-sprite-size (@my-theme-icon-sprite-size * 2);
+		margin: @my-theme-icon-margin;
+		font-size: @my-theme-icon-font-size;
+		line-height: @my-theme-icon-size;
+
+		&.small {
+			width: @my-theme-icon-small-size;
+			height: @my-theme-icon-small-size;
+			line-height: @my-theme-icon-small-size;
+			font-size: @my-theme-icon-small-font-size;
+		}
+	});
+}

@@ -27,9 +27,11 @@
   "private": true,
   "repository": "",
   "enact": {
-    "theme": "moonstone",
-    "target": "electron-renderer"
+    "theme": "moonstone"
   },
+  "browserslist": [
+    "Electron >=5.0"
+  ],
   "eslintConfig": {
     "extends": "enact",
     "env": {
@@ -44,20 +46,21 @@
     "bin/*"
   ],
   "dependencies": {
-    "@enact/core": "^2.0.0",
-    "@enact/i18n": "^2.0.0",
-    "@enact/moonstone": "^2.0.0",
-    "@enact/spotlight": "^2.0.0",
-    "@enact/ui": "^2.0.0",
-    "@enact/webos": "^2.0.0",
-    "electron": "^1.0.0",
+    "@enact/core": "^3.0.0",
+    "@enact/i18n": "^3.0.0",
+    "@enact/moonstone": "^3.0.0",
+    "@enact/spotlight": "^3.0.0",
+    "@enact/ui": "^3.0.00",
+    "@enact/webos": "^3.0.0",
+    "electron": "^5.0.0",
+    "ilib": "^14.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
   "devDependencies": {
-    "electron-packager": "^11.0.0",
+    "electron-packager": "^13.0.0",
     "electron-rebuild": "^1.7.3",
-    "foreman": "^2.0.0"
+    "foreman": "^3.0.0"
   }
 }

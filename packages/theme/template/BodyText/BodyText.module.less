@@ -1,0 +1,22 @@
+// BodyText.module.less
+//
+@import "../styles/variables.less";
+@import "../styles/skin.less";
+
+.bodyText {
+	.applySkins({
+		margin: @my-theme-bodytext-margin;
+		padding: @my-theme-bodytext-padding;
+		text-shadow: @my-theme-bodytext-text-shadow;
+	});
+
+	:global(.enact-locale-right-to-left) & {
+		.applySkins({
+			text-align: right;
+
+			&.centered {
+				text-align: center;
+			}
+		});
+	}
+}
