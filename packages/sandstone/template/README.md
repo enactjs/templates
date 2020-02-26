@@ -1,7 +1,7 @@
 This project was bootstrapped with [@enact/cli](https://github.com/enactjs/cli).
 
 Below you will find some information on how to perform common tasks.
-You can find the most recent version of this guide [here](https://github.com/enactjs/templates/blob/master/packages/moonstone/template/README.md).
+You can find the most recent version of this guide [here](https://github.com/enactjs/templates/blob/master/packages/sandstone/template/README.md).
 Additional documentation on @enact/cli can be found [here](https://github.com/enactjs/cli/blob/master/docs/index.md).
 
 ## Folder Structure
@@ -74,7 +74,7 @@ The @enact/cli tool will check the project's `package.json` looking for an optio
 * `template` _[string]_ - Filepath to an alternate HTML template to use with the [Webpack html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin).
 * `isomorphic` _[string]_ - Alternate filepath to a custom isomorphic-compatible entrypoint. Not needed if main entrypoint is already isomorphic-compatible.
 * `title` _[string]_ - Title text that should be put within the HTML's `<title></title>` tags.
-* `theme` _[object]_ - A simplified string name to extrapolate `fontGenerator`, `ri`, and `screenTypes` preset values from. For example, `"moonstone"`
+* `theme` _[object]_ - A simplified string name to extrapolate `fontGenerator`, `ri`, and `screenTypes` preset values from. For example, `"sandstone"`
 * `fontGenerator` _[string]_ - Filepath to a commonjs fontGenerator module which will build locale-specific font CSS to inject into the HTML. By default will use any preset for a specified theme or fallback to moonstone.
 * `ri` _[object]_ - Resolution independence options to be forwarded to the [LESS plugin](https://github.com/enyojs/less-plugin-resolution-independence). By default will use any preset for a specified theme or fallback to moonstone
 * `screenTypes` _[array|string]_ - Array of 1 or more screentype definitions to be used with prerender HTML initialization. Can alternatively reference a json filepath to read for screentype definitons.  By default will use any preset for a specified theme or fallback to moonstone.
@@ -88,7 +88,7 @@ For example:
 {
   ...
   "enact": {
-    "theme": "moonstone",
+    "theme": "sandstone",
     "nodeBuiltins": {
       fs: 'empty',
       net: 'empty',
