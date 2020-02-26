@@ -32,7 +32,7 @@
   "dependencies": {
     "@enact/core": "^3.2.0",
     "@enact/i18n": "^3.2.0",
-    "@enact/moonstone": "enactjs/moonstone",
+    "@enact/moonstone": "^3.2.0",
     "@enact/spotlight": "^3.2.0",
     "@enact/ui": "^3.2.0",
     "ilib": "^14.4.0",
