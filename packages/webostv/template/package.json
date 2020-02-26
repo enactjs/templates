@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "1.0.0",
-  "description": "A general template for an Enact Moonstone application for webOS TVs",
+  "description": "A general template for an Enact Sandstone application for webOS TVs",
   "author": "",
   "main": "src/index.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "npm" : ">=6.9.0"
   },
   "enact": {
-    "theme": "moonstone"
+    "theme": "sandstone"
   },
   "eslintConfig": {
     "extends": "enact"
@@ -35,7 +35,7 @@
   "dependencies": {
     "@enact/core": "^3.2.0",
     "@enact/i18n": "^3.2.0",
-    "@enact/moonstone": "^3.2.0",
+    "@enact/sandstone": "enyojs/sandstone",
     "@enact/spotlight": "^3.2.0",
     "@enact/ui": "^3.2.0",
     "@enact/webos": "^3.2.0",

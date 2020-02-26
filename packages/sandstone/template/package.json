@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "1.0.0",
-  "description": "A general template for an Enact Moonstone application.",
+  "description": "A general template for an Enact Sandstone application.",
   "author": "",
   "main": "src/index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   "private": true,
   "repository": "",
   "enact": {
-    "theme": "moonstone"
+    "theme": "sandstone"
   },
   "eslintConfig": {
     "extends": "enact"
@@ -32,7 +32,7 @@
   "dependencies": {
     "@enact/core": "^3.2.0",
     "@enact/i18n": "^3.2.0",
-    "@enact/moonstone": "enactjs/moonstone",
+    "@enact/sandstone": "enyojs/sandstone",
     "@enact/spotlight": "^3.2.0",
     "@enact/ui": "^3.2.0",
     "ilib": "^14.4.0",
