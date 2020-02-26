@@ -22,16 +22,11 @@ function getResBundle () {
  *
  * @returns {Promise|ResBundle} Resolves with a new ilib.ResBundle
  */
-function createResBundle (options) {
+function createResBundle (options = {}) {
 	let opts = options;
 
 	if (typeof ILIB_MY_THEME_PATH !== 'undefined') {
-		opts = {
-			loadParams: {
-				root: ILIB_MY_THEME_PATH
-			},
-			...options
-		};
+		opts.basePath = ILIB_MY_THEME_PATH;
 	}
 
 	if (!opts.onLoad) return;

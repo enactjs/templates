@@ -28,19 +28,19 @@
     "dist/*"
   ],
   "dependencies": {
-    "@enact/core": "^3.0.0",
-    "@enact/i18n": "^3.0.0",
-    "@enact/spotlight": "^3.0.0",
-    "@enact/ui": "^3.0.0",
+    "@enact/core": "^3.2.0",
+    "@enact/i18n": "^3.2.0",
+    "@enact/spotlight": "^3.2.0",
+    "@enact/ui": "^3.2.0",
     "classnames": "^2.2.6",
     "prop-types": "^15.6.2",
     "ramda": "^0.25.0",
     "react": "^16.0.0"
   },
   "peerDependencies": {
-    "ilib": "^14.2.0 || ^14.2.0-webostv1"
+    "ilib": "^14.4.0 || ^14.4.0-webostv1"
   },
   "devDependencies": {
-    "ilib": "^14.2.0"
+    "ilib": "^14.4.0"
   }
 }
