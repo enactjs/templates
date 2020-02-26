@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "1.0.0",
-  "description": "A general template for an Enact Sandstone application for webOS TVs",
+  "description": "A general template for an Enact Sandstone application.",
   "author": "",
   "main": "src/index.js",
   "scripts": {
@@ -18,9 +18,6 @@
   "license": "UNLICENSED",
   "private": true,
   "repository": "",
-  "engines": {
-    "npm" : ">=6.9.0"
-  },
   "enact": {
     "theme": "sandstone"
   },
@@ -38,8 +35,7 @@
     "@enact/sandstone": "enyojs/sandstone",
     "@enact/spotlight": "^3.2.0",
     "@enact/ui": "^3.2.0",
-    "@enact/webos": "^3.2.0",
-    "ilib": "npm:ilib-webos-tv@^14.4.0-webostv1",
+    "ilib": "^14.4.0",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
