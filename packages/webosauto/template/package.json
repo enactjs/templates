@@ -18,9 +18,6 @@
   "license": "UNLICENSED",
   "private": true,
   "repository": "",
-  "engines": {
-    "npm": ">=6.9.0"
-  },
   "enact": {
     "theme": "agate"
   },
