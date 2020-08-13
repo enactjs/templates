@@ -18,9 +18,6 @@
   "license": "UNLICENSED",
   "private": true,
   "repository": "",
-  "engines": {
-    "npm": ">=6.9.0"
-  },
   "enact": {
     "theme": "agate"
   },
@@ -33,7 +30,7 @@
     "dist/*"
   ],
   "dependencies": {
-    "@enact/agate": "https://github.com/enactjs/agate",
+    "@enact/agate": "^1.0.0-alpha.16",
     "@enact/core": "^3.2.0",
     "@enact/i18n": "^3.2.0",
     "@enact/spotlight": "^3.2.0",
