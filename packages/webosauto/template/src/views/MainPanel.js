@@ -1,6 +1,6 @@
-import Button from '@enact/sandstone/Button';
+import Button from '@enact/agate/Button';
 import kind from '@enact/core/kind';
-import {Panel, Header} from '@enact/sandstone/Panels';
+import {Panel} from '@enact/agate/Panels';
 import React from 'react';
 
 const MainPanel = kind({
@@ -8,8 +8,7 @@ const MainPanel = kind({
 
 	render: (props) => (
 		<Panel {...props}>
-			<Header title="Hello world!" />
-			<Button>Click me</Button>
+			<Button>Click Me</Button>
 		</Panel>
 	)
 });
