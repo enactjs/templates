@@ -15,7 +15,6 @@ my-app/
   node_modules/
   package.json
   tsconfig.json
-  tslint.json
   src/
     App/
       App.tsx
@@ -66,7 +65,7 @@ Deletes previous build fragments from ./dist.
 
 ### `npm run lint`
 
-Runs syntax analysis on JavaScript files using the Enact configuration of Eslint and on TypeScript files using TSLint. NOTE: For TSLint, no rules are enabled. Update `tslint.json` to add rules.
+Runs syntax analysis on JavaScript files using the Enact configuration of Eslint and on TypeScript files using ESLint.
 
 ### `npm run test` and `npm run test-watch`
 
