@@ -53,7 +53,7 @@
     "@enact/ui": "^4.0.0-alpha.1",
     "@enact/webos": "^4.0.0-alpha.1",
     "electron": "^5.0.0",
-    "ilib": "^14.4.0",
+    "ilib": "^14.6.0",
     "prop-types": "^15.6.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
