@@ -1,6 +1,6 @@
 {
   "name": "@enact/templates",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "A collection of Enact-based templates.",
   "private": true,
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
@@ -15,7 +15,7 @@
     "lint": "eslint ."
   },
   "eslintIgnore": [
-  	"node_modules"
+    "node_modules"
   ],
   "devDependencies": {
     "babel-eslint": "^8.2.2",
