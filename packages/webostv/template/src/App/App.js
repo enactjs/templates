@@ -1,5 +1,5 @@
 import kind from '@enact/core/kind';
-import ThemeDecorator from '@enact/moonstone/ThemeDecorator';
+import MoonstoneDecorator from '@enact/moonstone/MoonstoneDecorator';
 import Panels from '@enact/moonstone/Panels';
 import React from 'react';
 
@@ -24,4 +24,4 @@ const App = kind({
 	)
 });
 
-export default ThemeDecorator(App);
+export default MoonstoneDecorator(App);
