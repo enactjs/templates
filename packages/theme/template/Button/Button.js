@@ -13,7 +13,6 @@
 import kind from '@enact/core/kind';
 import Spottable from '@enact/spotlight/Spottable';
 import {ButtonBase as UiButtonBase, ButtonDecorator as UiButtonDecorator} from '@enact/ui/Button';
-import React from 'react';
 import PropTypes from 'prop-types';
 import compose from 'ramda/src/compose';
 

@@ -13,7 +13,6 @@
  */
 
 import kind from '@enact/core/kind';
-import React from 'react';
 import PropTypes from 'prop-types';
 import compose from 'ramda/src/compose';
 import UiHeading from '@enact/ui/Heading';
