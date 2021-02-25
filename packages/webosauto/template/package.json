@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "1.0.0",
-  "description": "A general template for an Enact Moonstone application for webOS TVs",
+  "description": "A general template for an Enact Agate application for webOS Auto",
   "author": "",
   "main": "src/index.js",
   "scripts": {
@@ -18,11 +18,8 @@
   "license": "UNLICENSED",
   "private": true,
   "repository": "",
-  "engines": {
-    "npm" : ">=6.9.0"
-  },
   "enact": {
-    "theme": "moonstone"
+    "theme": "agate"
   },
   "eslintConfig": {
     "extends": "enact"
@@ -33,13 +30,13 @@
     "dist/*"
   ],
   "dependencies": {
-    "@enact/core": "^3.3.0",
-    "@enact/i18n": "^3.3.0",
-    "@enact/moonstone": "^3.3.0",
-    "@enact/spotlight": "^3.3.0",
-    "@enact/ui": "^3.3.0",
-    "@enact/webos": "^3.3.0",
-    "ilib": "npm:ilib-webos@^14.6.0-webos1",
+    "@enact/agate": "^1.0.0",
+    "@enact/core": "^3.4.9",
+    "@enact/i18n": "^3.4.9",
+    "@enact/spotlight": "^3.4.9",
+    "@enact/ui": "^3.4.9",
+    "@enact/webos": "^3.4.9",
+    "ilib": "^14.4.0",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"

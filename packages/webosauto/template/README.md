@@ -1,7 +1,7 @@
 This project was bootstrapped with [@enact/cli](https://github.com/enactjs/cli).
 
 Below you will find some information on how to perform common tasks.
-You can find the most recent version of this guide [here](https://github.com/enactjs/templates/blob/master/packages/webostv/template/README.md).
+You can find the most recent version of this guide [here](https://github.com/enactjs/templates/blob/master/packages/webosauto/template/README.md).
 Additional documentation on @enact/cli can be found [here](https://github.com/enactjs/cli/blob/master/docs/index.md).
 
 ## Folder Structure
@@ -75,10 +75,10 @@ The @enact/cli tool will check the project's `package.json` looking for an optio
 * `template` _[string]_ - Filepath to an alternate HTML template to use with the [Webpack html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin).
 * `isomorphic` _[string]_ - Alternate filepath to a custom isomorphic-compatible entrypoint. Not needed if main entrypoint is already isomorphic-compatible.
 * `title` _[string]_ - Title text that should be put within the HTML's `<title></title>` tags. Note: if this is a webOS-project, the title by default will be auto-detected from the appinfo.json content.
-* `theme` _[object]_ - A simplified string name to extrapolate `fontGenerator`, `ri`, and `screenTypes` preset values from. For example, `"moonstone"`
-* `fontGenerator` _[string]_ - Filepath to a commonjs fontGenerator module which will build locale-specific font CSS to inject into the HTML. By default will use any preset for a specified theme or fallback to moonstone.
-* `ri` _[object]_ - Resolution independence options to be forwarded to the [LESS plugin](https://github.com/enyojs/less-plugin-resolution-independence). By default will use any preset for a specified theme or fallback to moonstone
-* `screenTypes` _[array|string]_ - Array of 1 or more screentype definitions to be used with prerender HTML initialization. Can alternatively reference a json filepath to read for screentype definitons.  By default will use any preset for a specified theme or fallback to moonstone.
+* `theme` _[object]_ - A simplified string name to extrapolate `fontGenerator`, `ri`, and `screenTypes` preset values from. For example, `"agate"`
+* `fontGenerator` _[string]_ - Filepath to a commonjs fontGenerator module which will build locale-specific font CSS to inject into the HTML. By default will use any preset for a specified theme or fallback to agate.
+* `ri` _[object]_ - Resolution independence options to be forwarded to the [LESS plugin](https://github.com/enyojs/less-plugin-resolution-independence). By default will use any preset for a specified theme or fallback to agate
+* `screenTypes` _[array|string]_ - Array of 1 or more screentype definitions to be used with prerender HTML initialization. Can alternatively reference a json filepath to read for screentype definitons.  By default will use any preset for a specified theme or fallback to agate.
 * `nodeBuiltins` _[object]_ - Configuration settings for polyfilling NodeJS built-ins. See `node` [webpack option](https://webpack.js.org/configuration/node/).
 * `deep` _[string|array]_ - 1 or more javascript conditions that, when met, indicate deeplinking and any prerender should be discarded.
 * `target` _[string|array]_ - A build-type generic preset string (see `target` [webpack option](https://webpack.js.org/configuration/target/)) or alternatively a specific [browserlist array](https://github.com/ai/browserslist) of desired targets.
@@ -89,7 +89,7 @@ For example:
 {
   ...
   "enact": {
-    "theme": "moonstone",
+    "theme": "agate",
     "nodeBuiltins": {
       fs: 'empty',
       net: 'empty',
