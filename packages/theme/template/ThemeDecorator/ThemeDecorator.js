@@ -8,7 +8,6 @@ import {addAll} from '@enact/core/keymap';
 import hoc from '@enact/core/hoc';
 import I18nDecorator from '@enact/i18n/I18nDecorator';
 import kind from '@enact/core/kind';
-import React from 'react';
 import {ResolutionDecorator} from '@enact/ui/resolution';
 import {FloatingLayerDecorator} from '@enact/ui/FloatingLayer';
 import SpotlightRootDecorator from '@enact/spotlight/SpotlightRootDecorator';
