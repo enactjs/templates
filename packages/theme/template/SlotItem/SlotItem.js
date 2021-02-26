@@ -26,7 +26,6 @@ import {SlotItemBase as UiSlotItemBase, SlotItemDecorator as UiSlotItemDecorator
 import {ItemDecorator as UiItemDecorator} from '@enact/ui/Item';
 import PropTypes from 'prop-types';
 import compose from 'ramda/src/compose';
-import React from 'react';
 
 import {ItemBase} from '../Item';
 import Skinnable from '../Skinnable';
