@@ -107,16 +107,19 @@ They are not required for linting. You should see the linter output right in you
 
 You would need to install an ESLint plugin for your editor first.
 
->**A note for Atom `linter-eslint` users**
+Ever since ESLint 6, global installs of ESLint configs are no longer supported.
+To work around this new limitation, while still supporting in-editor linting, we've created a new eslint-config-enact-proxy package.
+The eslint-config-enact-proxy acts like a small proxy config, redirecting ESLint to use a globally-installed Enact ESLint config.
+In order for in-editor linting to work with our updated ESLint config, you'll need to upgrade to ESLint 7 or later. This can be installed globally by running:
 
->If you are using the Atom `linter-eslint` plugin, make sure that **Use global ESLint installation** option is checked:
+```
+npm install -g eslint
+```
 
-><img src="http://i.imgur.com/yVNNHJM.png" width="300">
+Then, you will need to uninstall any previous globally-installed Enact linting package (everything but eslint itself):
 
-Then, you will need to install some packages *globally*:
-
-```sh
-npm install -g eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-babel babel-eslint eslint-plugin-jest eslint-plugin-enact eslint-config-enact
+```
+npm remove -g eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-babel babel-eslint eslint-plugin-jest eslint-plugin-enact eslint-config-enact
 ```
 
 ## Installing a Dependency
