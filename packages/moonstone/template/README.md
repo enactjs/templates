@@ -71,16 +71,16 @@ These tasks will execute all valid tests (files that end in `-specs.js`) that ar
 
 The @enact/cli tool will check the project's `package.json` looking for an optional `enact` object for a few customization options:
 
-* `template` _[string]_ - Filepath to an alternate HTML template to use with the [Webpack html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin).
-* `isomorphic` _[string]_ - Alternate filepath to a custom isomorphic-compatible entrypoint. Not needed if main entrypoint is already isomorphic-compatible.
-* `title` _[string]_ - Title text that should be put within the HTML's `<title></title>` tags.
-* `theme` _[object]_ - A simplified string name to extrapolate `fontGenerator`, `ri`, and `screenTypes` preset values from. For example, `"moonstone"`
-* `fontGenerator` _[string]_ - Filepath to a commonjs fontGenerator module which will build locale-specific font CSS to inject into the HTML. By default will use any preset for a specified theme or fallback to moonstone.
-* `ri` _[object]_ - Resolution independence options to be forwarded to the [LESS plugin](https://github.com/enyojs/less-plugin-resolution-independence). By default will use any preset for a specified theme or fallback to moonstone
-* `screenTypes` _[array|string]_ - Array of 1 or more screentype definitions to be used with prerender HTML initialization. Can alternatively reference a json filepath to read for screentype definitons.  By default will use any preset for a specified theme or fallback to moonstone.
+* `template` _[string]_ - Filepath to an alternate HTML template to use with the [Webpack html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin).
+* `isomorphic` _[string]_ - Alternate filepath to a custom isomorphic-compatible entry point. Not needed if main entry point is already isomorphic-compatible.
+* `title` _[string]_ - Title text that should be put within the HTML's `<title></title>` tags. Note: if this is a webOS-project, the title will, by default, be auto-detected from the **appinfo.json** content.
+* `theme` _[object]_ - A simplified string name to extrapolate `fontGenerator`, `ri`, and `screenTypes` preset values from. For example, `"moonstone"`.
+* `fontGenerator` _[string]_ - Filepath to a CommonJS fontGenerator module which will build locale-specific font CSS to inject into the HTML. By default, will use any preset for a specified theme or fallback to moonstone.
+* `ri` _[object]_ - Resolution independence options to be forwarded to the [LESS plugin](https://github.com/enactjs/less-plugin-resolution-independence). By default, will use any preset for a specified theme or fallback to moonstone.
+* `screenTypes` _[array|string]_ - Array of 1 or more screentype definitions to be used with prerender HTML initialization. Can alternatively reference a json filepath to read for screentype definitions.  By default, will use any preset for a specified theme or fallback to moonstone.
 * `nodeBuiltins` _[object]_ - Configuration settings for polyfilling NodeJS built-ins. See `node` [webpack option](https://webpack.js.org/configuration/node/).
-* `deep` _[string|array]_ - 1 or more javascript conditions that, when met, indicate deeplinking and any prerender should be discarded.
-* `target` _[string|array]_ - A build-type generic preset string (see `target` [webpack option](https://webpack.js.org/configuration/target/)) or alternatively a specific [browserlist array](https://github.com/ai/browserslist) of desired targets.
+* `deep` _[string|array]_ - 1 or more JavaScript conditions that, when met, indicate deeplinking and any prerender should be discarded.
+* `target` _[string|array]_ - A build-type generic preset string (see `target` [webpack option](https://webpack.js.org/configuration/target/)) or alternatively a specific [browserslist array](https://github.com/browserslist/browserslist) of desired targets.
 * `proxy` _[string]_ - Proxy target during project `serve` to be used within the [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware).
 
 For example:
@@ -107,23 +107,26 @@ They are not required for linting. You should see the linter output right in you
 
 You would need to install an ESLint plugin for your editor first.
 
->**A note for Atom `linter-eslint` users**
-
->If you are using the Atom `linter-eslint` plugin, make sure that **Use global ESLint installation** option is checked:
-
-><img src="http://i.imgur.com/yVNNHJM.png" width="300">
-
-Then, you will need to install some packages *globally*:
+Ever since ESLint 6, global installs of ESLint configs are no longer supported.
+To work around this new limitation, while still supporting in-editor linting, we've created a new [eslint-config-enact-proxy](https://github.com/enactjs/eslint-config-enact-proxy) package.
+The [eslint-config-enact-proxy](https://github.com/enactjs/eslint-config-enact-proxy) acts like a small proxy config, redirecting ESLint to use a globally-installed Enact ESLint config.
+In order for in-editor linting to work with our updated ESLint config, you'll need to upgrade to ESLint 7 or later. This can be installed globally by running:
 
 ```sh
-npm install -g eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-babel babel-eslint eslint-plugin-jest eslint-plugin-enact eslint-config-enact
+npm install -g eslint
+```
+
+Then, you will need to uninstall any previous globally-installed Enact linting package (everything but eslint itself):
+
+```sh
+npm remove -g eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-babel babel-eslint eslint-plugin-jest eslint-plugin-enact eslint-config-enact
 ```
 
 ## Installing a Dependency
 
 The generated project includes Enact (and all its libraries). It also includes React and ReactDOM.  For test writing, both Sinon and Enzyme are as development dependencies. You may install other dependencies with `npm`:
 
-```
+```sh
 npm install --save <package-name>
 ```
 
