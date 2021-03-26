@@ -1,6 +1,6 @@
 {
   "name": "@enact/template-webosauto",
-  "version": "4.0.0-alpha.1",
+  "version": "4.0.0",
   "description": "A template generator for Enact applications for webOS Auto",
   "main": "index.js",
   "author": "Dave Freeman <dave.freeman@lge.com>",
