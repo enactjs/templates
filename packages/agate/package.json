@@ -1,6 +1,6 @@
 {
   "name": "@enact/template-agate",
-  "version": "4.0.0",
+  "version": "4.0.0-alpha.1",
   "description": "A template generator for Enact Agate applications.",
   "main": "index.js",
   "author": "Derek Tor <derek.tor@lge.com>",
