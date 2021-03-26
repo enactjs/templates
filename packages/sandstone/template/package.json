@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "1.0.0",
-  "description": "A general template for an Enact Agate application.",
+  "description": "A general template for an Enact Sandstone application.",
   "author": "",
   "main": "src/index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   "private": true,
   "repository": "",
   "enact": {
-    "theme": "agate"
+    "theme": "sandstone"
   },
   "eslintConfig": {
     "extends": "enact"
@@ -30,9 +30,9 @@
     "dist/*"
   ],
   "dependencies": {
-    "@enact/agate": "^2.0.0-alpha.1",
     "@enact/core": "^4.0.0",
     "@enact/i18n": "^4.0.0",
+    "@enact/sandstone": "^2.0.0-alpha.2",
     "@enact/spotlight": "^4.0.0",
     "@enact/ui": "^4.0.0",
     "ilib": "^14.6.0",
