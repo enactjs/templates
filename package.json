@@ -1,6 +1,6 @@
 {
   "name": "@enact/templates",
-  "version": "4.0.0-alpha.1",
+  "version": "4.0.0",
   "description": "A collection of Enact-based templates.",
   "private": true,
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
@@ -30,7 +30,7 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "lerna": "^4.0.0",
-    "react": "17.0.1",
+    "react": "^17.0.1",
     "typescript": "^4.2.2"
   }
 }
