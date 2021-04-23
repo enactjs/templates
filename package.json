@@ -1,6 +1,6 @@
 {
   "name": "@enact/templates",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "A collection of Enact-based templates.",
   "private": true,
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
@@ -23,7 +23,7 @@
     "@typescript-eslint/parser": "^4.5.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.11.0",
-    "eslint-config-enact": "^3.0.0",
+    "eslint-config-enact": "^3.0.1",
     "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-enact": "^0.2.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
