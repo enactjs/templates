@@ -19,16 +19,16 @@
     "node_modules"
   ],
   "devDependencies": {
-    "@babel/eslint-parser": "^7.17.0",
     "@typescript-eslint/eslint-plugin": "^5.16.0",
     "@typescript-eslint/parser": "^5.16.0",
     "eslint": "^8.12.0",
     "eslint-config-enact": "^3.0.1",
     "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-enact": "^0.2.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "lerna": "^4.0.0",
     "react": "^17.0.1",
     "typescript": "^4.2.2"
