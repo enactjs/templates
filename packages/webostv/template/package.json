@@ -33,14 +33,14 @@
     "dist/*"
   ],
   "dependencies": {
-    "@enact/core": "^4.0.0",
-    "@enact/i18n": "^4.0.0",
-    "@enact/sandstone": "^2.0.0-alpha.3",
-    "@enact/spotlight": "^4.0.0",
-    "@enact/ui": "^4.0.0",
-    "@enact/webos": "^4.0.0",
-    "ilib": "npm:ilib-webos@^14.6.2-webos1",
-    "prop-types": "^15.6.2",
+    "@enact/core": "^4.1.4",
+    "@enact/i18n": "^4.1.4",
+    "@enact/sandstone": "^2.1.4",
+    "@enact/spotlight": "^4.1.4",
+    "@enact/ui": "^4.1.4",
+    "@enact/webos": "^4.1.4",
+    "ilib": "npm:ilib-webos@^14.14.0-webos1",
+    "prop-types": "^15.8.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   }
