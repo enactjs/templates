@@ -1,6 +1,6 @@
 {
   "name": "@enact/templates",
-  "version": "4.0.1",
+  "version": "4.5.0-alpha.1",
   "description": "A collection of Enact-based templates.",
   "private": true,
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
@@ -19,18 +19,18 @@
     "node_modules"
   ],
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.5.0",
-    "@typescript-eslint/parser": "^4.5.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.11.0",
-    "eslint-config-enact": "^3.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint": "^8.12.0",
+    "eslint-config-enact": "^4.0.0",
     "eslint-plugin-babel": "^5.3.1",
-    "eslint-plugin-enact": "^0.2.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-enact": "^1.0.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
     "lerna": "^4.0.0",
-    "react": "^17.0.1",
-    "typescript": "^4.2.2"
+    "react": "^18.0.0",
+    "typescript": "^4.6.3"
   }
 }
