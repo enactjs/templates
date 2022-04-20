@@ -35,8 +35,7 @@
     "classnames": "^2.2.6",
     "prop-types": "^15.6.2",
     "ramda": "^0.25.0",
-    "react": "^17.0.1",
-    "web-vitals": "^2.1.4"
+    "react": "^17.0.1"
   },
   "peerDependencies": {
     "ilib": "^14.6.0 || ^14.6.0-webos1"
