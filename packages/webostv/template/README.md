@@ -23,6 +23,7 @@ my-app/
     views/
       MainPanel.js
     index.js
+    reportWebVitals.js
   resources/
   webos-meta/
 ```
