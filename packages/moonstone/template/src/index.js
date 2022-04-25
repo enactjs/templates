@@ -1,8 +1,8 @@
 import {render} from 'react-dom';
 import App from './App';
+import reportWebVitals from './reportWebVitals';
 
 const appElement = (<App />);
-import reportWebVitals from './reportWebVitals';
 
 // In a browser environment, render instead of exporting
 if (typeof window !== 'undefined') {
