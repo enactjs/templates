@@ -125,7 +125,7 @@ npm remove -g eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-babel 
 
 ## Installing a Dependency
 
-The generated project includes Enact (and all its libraries). It also includes React and ReactDOM.  For test writing, both Sinon and @testing-library/react are as development dependencies. You may install other dependencies with `npm`:
+The generated project includes Enact (and all its libraries). It also includes React and ReactDOM.  For test writing, both Jest and @testing-library/react are as development dependencies. You may install other dependencies with `npm`:
 
 ```sh
 npm install --save <package-name>
