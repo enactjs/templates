@@ -49,7 +49,16 @@ const IconBase = kind({
 		 * @type {String|Object}
 		 * @public
 		 */
-		children: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
+		children: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+
+		/**
+		 * Customizes the component by mapping the supplied collection of CSS class names to the
+		 * corresponding internal elements and states of this component.
+		 *
+		 * @type {Object}
+		 * @private
+		 */
+		css: PropTypes.object
 	},
 
 	styles: {
