@@ -1,8 +1,8 @@
-import {Cell, Column} from '@enact/ui/Layout';
 import kind from '@enact/core/kind';
-import PropTypes from 'prop-types';
-import Slottable from '@enact/ui/Slottable';
 import SpotlightContainerDecorator, {spotlightDefaultClass} from '@enact/spotlight/SpotlightContainerDecorator';
+import {Cell, Column} from '@enact/ui/Layout';
+import Slottable from '@enact/ui/Slottable';
+import PropTypes from 'prop-types';
 
 import Skinnable from '../Skinnable';
 

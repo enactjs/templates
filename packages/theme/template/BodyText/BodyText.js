@@ -11,9 +11,9 @@
  */
 
 import kind from '@enact/core/kind';
+import UiBodyText from '@enact/ui/BodyText';
 import PropTypes from 'prop-types';
 import compose from 'ramda/src/compose';
-import UiBodyText from '@enact/ui/BodyText';
 
 import Skinnable from '../Skinnable';
 
