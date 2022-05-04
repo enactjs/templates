@@ -24,6 +24,7 @@ my-app/
     views/
       MainPanel.tsx
     index.tsx
+    reportWebVitals.ts
   resources/
   types/
     react-app-env.d.ts
