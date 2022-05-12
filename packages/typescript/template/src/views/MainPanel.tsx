@@ -1,5 +1,5 @@
-import Button from '@enact/sandstone/Button';
 import kind from '@enact/core/kind';
+import Button from '@enact/sandstone/Button';
 import {Header, Panel} from '@enact/sandstone/Panels';
 
 const MainPanel = kind({
