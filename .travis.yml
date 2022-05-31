@@ -5,5 +5,12 @@ node_js:
 sudo: false
 install:
     - npm install
+    - npm install -g enactjs/cli#develop 
 script:
-    - npm run lint
+    - echo -e "\x1b\x5b35;1m*** Starting eslint...\x1b\x5b0m"
+    - npm run lint -- -- --report-unused-disable-directives --max-warnings 0 .
+    - echo -e "\x1b\x5b35;1m*** eslint complete\x1b\x5b0m"
+    - cd packages\theme\template
+    - echo -e "\x1b\x5b35;1m*** Starting tests...\x1b\x5b0m"
+    - npm test 
+    - echo -e "\x1b\x5b35;1m*** Tests complete\x1b\x5b0m"

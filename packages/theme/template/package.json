@@ -41,7 +41,6 @@
     "ilib": "^14.14.0 || ^14.14.0-webos1"
   },
   "devDependencies": {
-    "eslint-plugin-testing-library": "^5.2.1",
     "ilib": "^14.14.0"
   }
 }
