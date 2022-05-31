@@ -13,7 +13,7 @@ describe('CheckboxItem Specs', () => {
 	});
 
 	test('should include the selected class when selected', () => {
-		render(<CheckboxBase selected/>);
+		render(<CheckboxBase selected />);
 		const checkboxElement = screen.getByRole('checkbox');
 
 		expect(checkboxElement).toHaveClass('selected');

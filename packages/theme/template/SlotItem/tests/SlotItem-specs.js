@@ -4,8 +4,8 @@ import '@testing-library/jest-dom';
 import SlotItem from '../SlotItem';
 
 describe('SlotItem', () => {
-	test('Should render a SlotItem component ', () => {
-		render(<SlotItem data-testid='slotItem' />);
+	test('Should render a SlotItem component', () => {
+		render(<SlotItem data-testid="slotItem" />);
 
 		const element = screen.getByTestId('slotItem');
 		expect(element).toBeInTheDocument();

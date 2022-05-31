@@ -59,7 +59,7 @@ const CheckboxBase = kind({
 				{...rest}
 				css={css}
 				iconComponent={Icon}
-				role='checkbox'
+				role="checkbox"
 			>
 				{children}
 			</ToggleIcon>

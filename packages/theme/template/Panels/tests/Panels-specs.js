@@ -29,10 +29,10 @@ describe('Panels Specs', () => {
 	});
 
 	test('Should render Panels with a header', () => {
-		const header = <Heading />
+		const header = <Heading />;
 		render(
 			<Panels data-testid="panel" index={0}>
-				<Panel header={header}/>
+				<Panel header={header} />
 			</Panels>
 		);
 
