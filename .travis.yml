@@ -16,3 +16,4 @@ script:
     - echo -e "\x1b\x5b35;1m*** Starting tests...\x1b\x5b0m"
     - npm run test 
     - echo -e "\x1b\x5b35;1m*** Tests complete\x1b\x5b0m"
+    
