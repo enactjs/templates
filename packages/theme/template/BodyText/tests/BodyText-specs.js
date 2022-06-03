@@ -1,8 +1,8 @@
+import {Cell} from '@enact/ui/Layout';
 import '@testing-library/jest-dom';
 import {render, screen} from '@testing-library/react';
 
 import BodyText, {BodyTextBase} from '../BodyText';
-import {Cell} from '@enact/ui/Layout';
 
 describe('BodyText Specs', () => {
 	test('should render a single <p> tag', () => {
