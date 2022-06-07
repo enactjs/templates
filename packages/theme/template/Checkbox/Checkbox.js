@@ -46,20 +46,7 @@ const CheckboxBase = kind({
 		 * @default	'check'
 		 * @public
 		 */
-		children: PropTypes.string,
-
-		/**
-		 * Customizes the component by mapping the supplied collection of CSS class names to the
-		 * corresponding internal elements and states of this component.
-		 *
-		 * The following classes are supported:
-		 *
-		 * * `toggleIcon` - The root component class
-		 *
-		 * @type {Object}
-		 * @public
-		 */
-		css: PropTypes.object
+		children: PropTypes.string
 	},
 
 	defaultProps: {
