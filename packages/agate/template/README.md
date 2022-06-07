@@ -23,6 +23,7 @@ my-app/
     views/
       MainPanel.js
     index.js
+    reportWebVitals.js
   resources/
 ```
 
@@ -79,6 +80,7 @@ The @enact/cli tool will check the project's `package.json` looking for an optio
 * `ri` _[object]_ - Resolution independence options to be forwarded to the [LESS plugin](https://github.com/enactjs/less-plugin-resolution-independence). By default, will use any preset for a specified theme or fallback to agate.
 * `screenTypes` _[array|string]_ - Array of 1 or more screentype definitions to be used with prerender HTML initialization. Can alternatively reference a json filepath to read for screentype definitions.  By default, will use any preset for a specified theme or fallback to agate.
 * `nodeBuiltins` _[object]_ - Configuration settings for polyfilling NodeJS built-ins. See `node` [webpack option](https://webpack.js.org/configuration/node/).
+* `resolveFallback` _[object]_ - Configuration settings for redirecting module requests when normal resolving fails. See `resolve.fallback` [webpack option](https://webpack.js.org/configuration/resolve/#resolvefallback).
 * `deep` _[string|array]_ - 1 or more JavaScript conditions that, when met, indicate deeplinking and any prerender should be discarded.
 * `target` _[string|array]_ - A build-type generic preset string (see `target` [webpack option](https://webpack.js.org/configuration/target/)) or alternatively a specific [browserslist array](https://github.com/browserslist/browserslist) of desired targets.
 * `proxy` _[string]_ - Proxy target during project `serve` to be used within the [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware).
@@ -89,10 +91,10 @@ For example:
   ...
   "enact": {
     "theme": "agate",
-    "nodeBuiltins": {
-      fs: 'empty',
-      net: 'empty',
-      tls: 'empty'
+    "resolveFallback": {
+      fs: false,
+      net: false,
+      tls: false
     }
   }
   ...
