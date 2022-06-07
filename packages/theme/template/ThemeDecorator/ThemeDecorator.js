@@ -8,9 +8,9 @@ import {addAll} from '@enact/core/keymap';
 import kind from '@enact/core/kind';
 import hoc from '@enact/core/hoc';
 import I18nDecorator from '@enact/i18n/I18nDecorator';
+import SpotlightRootDecorator from '@enact/spotlight/SpotlightRootDecorator';
 import {FloatingLayerDecorator} from '@enact/ui/FloatingLayer';
 import {ResolutionDecorator} from '@enact/ui/resolution';
-import SpotlightRootDecorator from '@enact/spotlight/SpotlightRootDecorator';
 
 import Skinnable from '../Skinnable';
 

@@ -55,8 +55,12 @@ const IconBase = kind({
 		 * Customizes the component by mapping the supplied collection of CSS class names to the
 		 * corresponding internal elements and states of this component.
 		 *
+		 * The following classes are supported:
+		 *
+		 * * `icon` - The root component class
+		 *
 		 * @type {Object}
-		 * @private
+		 * @public
 		 */
 		css: PropTypes.object
 	},

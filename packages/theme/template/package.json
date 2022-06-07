@@ -20,7 +20,7 @@
     }
   },
   "eslintConfig": {
-    "extends": "enact"
+    "extends": "enact-proxy/strict"
   },
   "eslintIgnore": [
     "node_modules/*",
@@ -41,6 +41,7 @@
     "ilib": "^14.14.0 || ^14.14.0-webos1"
   },
   "devDependencies": {
+    "eslint-config-enact-proxy": "^1.0.4",
     "ilib": "^14.14.0"
   }
 }

@@ -36,6 +36,17 @@ const HeadingBase = kind({
 	name: 'Heading',
 
 	propTypes: /** @lends my-theme/Heading.HeadingBase.prototype */ {
+		/**
+		 * Customizes the component by mapping the supplied collection of CSS class names to the
+		 * corresponding internal elements and states of this component.
+		 *
+		 * The following classes are supported:
+		 *
+		 * * `heading` - The root component class
+		 *
+		 * @type {Object}
+		 * @public
+		 */
 		css: PropTypes.object,
 
 		/**
