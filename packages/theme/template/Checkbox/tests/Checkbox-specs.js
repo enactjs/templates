@@ -19,11 +19,10 @@ describe('CheckboxItem Specs', () => {
 		expect(checkboxElement).toHaveClass('selected');
 	});
 
-
 	test('should check the checkbox with one click', () => {
-		render(<Checkbox data-testid="checkbox" />);
+		render(<Checkbox />);
 
-		const checkboxItem = screen.getByTestId('checkbox');
+		const checkboxItem = screen.getByRole('checkbox');
 		const expected = 'selected';
 
 		fireEvent.click(checkboxItem);
@@ -32,9 +31,9 @@ describe('CheckboxItem Specs', () => {
 	});
 
 	test('should uncheck the checkbox with two clicks', () => {
-		render(<Checkbox data-testid="checkbox" />);
+		render(<Checkbox />);
 
-		const actual = screen.getByTestId('checkbox');
+		const actual = screen.getByRole('checkbox');
 		const expected = 'selected';
 
 		fireEvent.click(actual);
