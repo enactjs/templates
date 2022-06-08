@@ -19,8 +19,8 @@
  */
 
 import kind from '@enact/core/kind';
-import PropTypes from 'prop-types';
 import {SlideLeftArranger, ViewManager} from '@enact/ui/ViewManager';
+import PropTypes from 'prop-types';
 
 import Skinnable from '../Skinnable';
 
