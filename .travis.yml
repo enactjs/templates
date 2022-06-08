@@ -9,9 +9,10 @@ install:
     - cd ./packages/theme/template
     - npm install
 script:
-    - echo -e "\x1b\x5b35;1m*** Starting eslint...\x1b\x5b0m"
-    - npm run lint
-    - echo -e "\x1b\x5b35;1m*** eslint complete\x1b\x5b0m"
     - echo -e "\x1b\x5b35;1m*** Starting tests from theme template...\x1b\x5b0m"
     - npm run test
     - echo -e "\x1b\x5b35;1m*** Tests complete\x1b\x5b0m"
+    - echo -e "\x1b\x5b35;1m*** Starting eslint...\x1b\x5b0m"
+    - cd ../../..
+    - npm run lint
+    - echo -e "\x1b\x5b35;1m*** eslint complete\x1b\x5b0m"
