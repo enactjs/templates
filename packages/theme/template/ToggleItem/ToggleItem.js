@@ -21,9 +21,9 @@
 
 import kind from '@enact/core/kind';
 import EnactPropTypes from '@enact/core/internal/prop-types';
-import PropTypes from 'prop-types';
-import {ToggleItemBase as UiToggleItem, ToggleItemDecorator as UiToggleItemDecorator} from '@enact/ui/ToggleItem';
 import Spottable from '@enact/spotlight/Spottable';
+import {ToggleItemBase as UiToggleItem, ToggleItemDecorator as UiToggleItemDecorator} from '@enact/ui/ToggleItem';
+import PropTypes from 'prop-types';
 import compose from 'ramda/src/compose';
 
 import Skinnable from '../Skinnable';
