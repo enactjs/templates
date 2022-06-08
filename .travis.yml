@@ -6,9 +6,6 @@ sudo: false
 install:
     - npm install -g enactjs/cli#develop
     - npm install
-    - cd ./packages/theme/template
-    - npm install
-    - cd ../../..
 script:
     - echo -e "\x1b\x5b35;1m*** Starting eslint...\x1b\x5b0m"
     - npm run lint
