@@ -16,7 +16,8 @@
   },
   "eslintIgnore": [
     ".eslintrc.js",
-    "node_modules"
+    "node_modules",
+    "packages/theme/template"
   ],
   "devDependencies": {
     "@babel/eslint-plugin": "^7.17.7",
