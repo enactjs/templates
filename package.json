@@ -1,6 +1,6 @@
 {
   "name": "@enact/templates",
-  "version": "4.5.0-alpha.4",
+  "version": "4.5.0-rc.1",
   "description": "A collection of Enact-based templates.",
   "private": true,
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
@@ -16,7 +16,8 @@
   },
   "eslintIgnore": [
     ".eslintrc.js",
-    "node_modules"
+    "node_modules",
+    "packages/theme/template"
   ],
   "devDependencies": {
     "@babel/eslint-plugin": "^7.17.7",
@@ -30,6 +31,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-plugin-testing-library": "^5.2.1",
     "lerna": "^4.0.0",
     "react": "^18.0.0",
     "typescript": "^4.6.3"

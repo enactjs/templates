@@ -22,8 +22,9 @@
 
 import kind from '@enact/core/kind';
 import Spottable from '@enact/spotlight/Spottable';
-import {SlotItemBase as UiSlotItemBase, SlotItemDecorator as UiSlotItemDecorator} from '@enact/ui/SlotItem';
 import {ItemDecorator as UiItemDecorator} from '@enact/ui/Item';
+import {SlotItemBase as UiSlotItemBase, SlotItemDecorator as UiSlotItemDecorator} from '@enact/ui/SlotItem';
+
 import PropTypes from 'prop-types';
 import compose from 'ramda/src/compose';
 

@@ -13,8 +13,9 @@ import Spottable from '@enact/spotlight/Spottable';
 import {ItemBase as UiItemBase, ItemDecorator as UiItemDecorator} from '@enact/ui/Item';
 import compose from 'ramda/src/compose';
 
-import componentCss from './Item.module.less';
 import Skinnable from '../Skinnable';
+
+import componentCss from './Item.module.less';
 
 /**
  * A MyTheme styled item.

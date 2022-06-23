@@ -10,10 +10,10 @@
  */
 
 import kind from '@enact/core/kind';
+import Icon from '@enact/ui/Icon';
 import PropTypes from 'prop-types';
 
 import ToggleIcon from '../ToggleIcon';
-import Icon from '@enact/ui/Icon';
 
 import css from './Checkbox.module.less';
 
@@ -59,6 +59,7 @@ const CheckboxBase = kind({
 				{...rest}
 				css={css}
 				iconComponent={Icon}
+				role="checkbox"
 			>
 				{children}
 			</ToggleIcon>
