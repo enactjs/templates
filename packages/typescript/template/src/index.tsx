@@ -1,4 +1,4 @@
-import {createRoot} from 'react-dom/client'
+import {createRoot, hydrateRoot} from 'react-dom/client';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -8,9 +8,13 @@ const appElement = (<App />);
 // In a browser environment, render instead of exporting
 if (typeof window !== 'undefined') {
 	const container = document.getElementById('root')!;
-	const root = createRoot(container);
 
-	root.render(appElement);
+	// @ts-ignore
+	if (ENACT_PACK_ISOMORPHIC) {
+		hydrateRoot(container, appElement);
+	} else {
+		createRoot(container).render(appElement);
+	}
 }
 
 export default appElement;
