@@ -15,7 +15,7 @@ const sourceFiles = (dir, action) => {
 		} else if (/\.(css|less|js|jsx|ts|tsx|md)$/.test(item)) {
 			action(itemPath);
 		}
-	})
+	});
 };
 
 module.exports = {
