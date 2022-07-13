@@ -18,7 +18,11 @@ function createWindow () {
 		height: 600,
 		icon: (process.platform==='win32'
 				? path.join(__dirname, 'assets', 'icon-mini.png')
-				: path.join(__dirname, 'assets', 'icon.png'))
+				: path.join(__dirname, 'assets', 'icon.png')),
+		webPreferences: {
+			nodeIntegration: true,
+			contextIsolation: false,
+		}
 	})
 
 	// and load the index.html of the app.
