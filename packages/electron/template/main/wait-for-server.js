@@ -39,8 +39,7 @@ const tryConnection = () => client.connect({port: port}, () => {
 		const exec = require('child_process').exec;
 		exec('npm run electron', {inherit:'stdio', cwd:process.cwd(), env:process.env});
 	}
-}
-);
+});
 
 tryConnection();
 
