@@ -32,18 +32,17 @@ const client = new net.Socket();
 
 let startedElectron = false;
 const tryConnection = () => client.connect({port: port}, () => {
-        client.end();
-        if(!startedElectron) {
-            console.log('Starting electron...');
-            startedElectron = true;
-            const exec = require('child_process').exec;
-            exec('npm run electron', {inherit:'stdio', cwd:process.cwd(), env:process.env});
-        }
-    }
-);
+	client.end();
+	if (!startedElectron) {
+		console.log('Starting electron...');
+		startedElectron = true;
+		const exec = require('child_process').exec;
+		exec('npm run electron', {inherit:'stdio', cwd:process.cwd(), env:process.env});
+	}
+});
 
 tryConnection();
 
 client.on('error', () => {
-    setTimeout(tryConnection, 1000);
+	setTimeout(tryConnection, 1000);
 });
