@@ -3,7 +3,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const spawn = require('cross-spawn');
 
-function silentSpawn (bin, args, cwd) {
+function silentSpawn(bin, args, cwd) {
 	return new Promise((resolve, reject) => {
 		const stdio = ['ignore', 'ignore', process.stderr];
 		const child = spawn(bin, args, {stdio, cwd, env:process.env});
@@ -33,8 +33,8 @@ module.exports = {
 		defaultGenerator.prepare({opts, defaultGenerator, template, directory, name});
 		return silentSpawn('cordova', ['create', '.'], directory)
 			.catch(() => {
-				throw new Error('Failed to create a new Cordova workspace. Ensure the ' +
-								'Cordova CLI is globally installed.');
+				throw new Error('Failed to create a new Cordova workspace. Ensure the '
+								+ 'Cordova CLI is globally installed.');
 			})
 			.then(() => console.log('Generated Cordova project workspace.'))
 			.then(() => fs.remove(path.join(directory, 'res')))
@@ -73,10 +73,10 @@ module.exports = {
 				console.log('	npm run test');
 				console.log('		Starts the test runner.');
 				console.log();
-				console.log('Additionally, the directory acts as a fully-functioning Cordova ' +
-							'project workspace.');
-				console.log('See https://cordova.apache.org/ for more details on Cordova and its ' +
-							'CLI commands.');
+				console.log('Additionally, the directory acts as a fully-functioning Cordova '
+							+ 'project workspace.');
+				console.log('See https://cordova.apache.org/ for more details on Cordova and its '
+							+ 'CLI commands.');
 				console.log();
 				console.log('Have fun!');
 			});
