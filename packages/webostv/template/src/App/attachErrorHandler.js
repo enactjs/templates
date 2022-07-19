@@ -1,4 +1,4 @@
-import {onWindowReady} from '@enact/core/snapshot'
+import {onWindowReady} from '@enact/core/snapshot';
 import {error} from '@enact/webos/pmloglib';
 
 // Logs any uncaught exceptions to the system logs for future troubleshooting. Payload can be
