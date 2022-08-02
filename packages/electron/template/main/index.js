@@ -1,3 +1,5 @@
+/* global __dirname */
+
 const electron = require('electron');
 // Module to control application life.
 const app = electron.app;
@@ -16,14 +18,14 @@ function createWindow () {
 	mainWindow = new BrowserWindow({
 		width: 800,
 		height: 600,
-		icon: (process.platform==='win32'
-				? path.join(__dirname, 'assets', 'icon-mini.png')
-				: path.join(__dirname, 'assets', 'icon.png')),
+		icon: (process.platform === 'win32' ?
+			path.join(__dirname, 'assets', 'icon-mini.png') :
+			path.join(__dirname, 'assets', 'icon.png')),
 		webPreferences: {
 			nodeIntegration: true,
-			contextIsolation: false,
+			contextIsolation: false
 		}
-	})
+	});
 
 	// and load the index.html of the app.
 	mainWindow.loadURL(process.env.ELECTRON_START_URL || url.format({
