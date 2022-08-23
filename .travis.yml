@@ -5,7 +5,7 @@ node_js:
 sudo: false
 install:
     - npm install -g enactjs/cli#develop
-    - npm install
+    - npm install --save-dev eslint-config-enact-proxy
     - cd ./packages/theme/template
     - npm install
 script:
@@ -15,6 +15,5 @@ script:
     - echo -e "\x1b\x5b35;1m*** Starting eslint...\x1b\x5b0m"
     - npm run lint
     - cd ../../..
-    - npm uninstall -g enactjs/cli
     - npm run lint
     - echo -e "\x1b\x5b35;1m*** eslint complete\x1b\x5b0m"
