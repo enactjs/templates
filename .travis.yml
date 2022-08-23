@@ -5,8 +5,10 @@ node_js:
 sudo: false
 install:
     - npm install -g enactjs/cli#develop
+    - npm install
+    - cd ./packages/agate/template
     - npm install --save-dev eslint-config-enact-proxy
-    - cd ./packages/theme/template
+    - cd ../../theme/template
     - npm install
 script:
     - echo -e "\x1b\x5b35;1m*** Starting tests from theme template...\x1b\x5b0m"
