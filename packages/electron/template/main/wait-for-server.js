@@ -34,6 +34,7 @@ let startedElectron = false;
 const tryConnection = () => client.connect({port: port}, () => {
 	client.end();
 	if (!startedElectron) {
+		// eslint-disable-next-line no-console
 		console.log('Starting electron...');
 		startedElectron = true;
 		const exec = require('child_process').exec;

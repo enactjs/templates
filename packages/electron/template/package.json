@@ -27,7 +27,7 @@
   "private": true,
   "repository": "",
   "enact": {
-    "theme": "moonstone"
+    "theme": "sandstone"
   },
   "browserslist": [
     "Electron >=5.0"
@@ -48,7 +48,7 @@
   "dependencies": {
     "@enact/core": "^4.5.0",
     "@enact/i18n": "^4.5.0",
-    "@enact/moonstone": "^4.5.0",
+    "@enact/sandstone": "^2.5.0",
     "@enact/spotlight": "^4.5.0",
     "@enact/ui": "^4.5.0",
     "@enact/webos": "^4.5.0",
