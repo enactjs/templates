@@ -5,7 +5,7 @@ node_js:
 sudo: false
 install:
     - npm install -g enactjs/cli#develop
-    - npm install
+    - npm install --save-dev eslint-config-enact-proxy
     - cd ./packages/theme/template
     - npm install
 script:
