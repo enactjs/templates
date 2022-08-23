@@ -33,7 +33,7 @@
     "Electron >=5.0"
   ],
   "eslintConfig": {
-    "extends": "enact-proxy",
+    "extends": "enact",
     "env": {
       "browser": true,
       "node": true

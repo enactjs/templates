@@ -22,7 +22,7 @@
     "theme": "agate"
   },
   "eslintConfig": {
-    "extends": "enact-proxy"
+    "extends": "enact"
   },
   "eslintIgnore": [
     "node_modules/*",

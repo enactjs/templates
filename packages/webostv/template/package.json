@@ -25,7 +25,7 @@
     "theme": "sandstone"
   },
   "eslintConfig": {
-    "extends": "enact-proxy"
+    "extends": "enact"
   },
   "eslintIgnore": [
     "node_modules/*",
