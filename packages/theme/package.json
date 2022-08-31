@@ -8,7 +8,12 @@
     "Dave Freeman <dave.freeman@lge.com>",
     "Jason Robitaille <jason.robitaille@lge.com>"
   ],
-  "repository": "https://github.com/enactjs/templates",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enactjs/templates.git",
+    "directory": "packages/theme"
+  },
+  "homepage": "https://github.com/enactjs/templates/tree/master/packages/theme#readme", 
   "license": "Apache-2.0",
   "engines": {
     "node": ">=6.4.0"
