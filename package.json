@@ -4,6 +4,10 @@
   "description": "A collection of Enact-based templates.",
   "private": true,
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enactjs/templates.git"
+  },
   "license": "Apache-2.0",
   "scripts": {
     "bootstrap": "lerna bootstrap",
