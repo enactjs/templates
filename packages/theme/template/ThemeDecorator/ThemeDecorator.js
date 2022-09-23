@@ -61,7 +61,7 @@ const ThemeDecorator = hoc(defaultConfig, (config, Wrapped) => {
 
 	let App = Wrapped;
 	if (float) App = FloatingLayerDecorator({wrappedClassName: bgClassName}, App);
-	if (ri) App = ResolutionDecorator(ri, App);
+	if(ri) App = ResolutionDecorator(ri, App);
 	if (i18n) App = I18nDecorator(App);
 	if (spotlight) App = SpotlightRootDecorator({noAutoFocus}, App);
 	if (skin) App = Skinnable({defaultSkin: 'my-skin'}, App);
