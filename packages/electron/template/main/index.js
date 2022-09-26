@@ -17,9 +17,7 @@ function createWindow () {
 		width: 800,
 		height: 600,
 		icon: (process.platform === 'win32' ?
-			// eslint-disable-next-line no-undef
 			path.join(__dirname, 'assets', 'icon-mini.png') :
-			// eslint-disable-next-line no-undef
 			path.join(__dirname, 'assets', 'icon.png')),
 		webPreferences: {
 			nodeIntegration: true,
@@ -29,7 +27,6 @@ function createWindow () {
 
 	// and load the index.html of the app.
 	mainWindow.loadURL(process.env.ELECTRON_START_URL || url.format({
-		// eslint-disable-next-line no-undef
 		pathname: path.join(__dirname, '..', 'dist', 'index.html'),
 		protocol: 'file:',
 		slashes: true
