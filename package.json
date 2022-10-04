@@ -23,20 +23,20 @@
     "packages/theme/template"
   ],
   "devDependencies": {
-    "@babel/eslint-plugin": "^7.18.10",
-    "@typescript-eslint/eslint-plugin": "^5.35.1",
-    "@typescript-eslint/parser": "^5.35.1",
-    "eslint": "^8.23.0",
+    "@babel/eslint-plugin": "^7.19.1",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "eslint": "^8.24.0",
     "eslint-config-enact": "^4.1.2",
     "eslint-plugin-enact": "^1.0.1",
     "eslint-plugin-jest": "^26.8.7",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.31.1",
+    "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-testing-library": "^5.6.0",
-    "lerna": "^5.4.3",
+    "eslint-plugin-testing-library": "^5.7.2",
+    "lerna": "^5.5.4",
     "react": "^18.2.0",
-    "typescript": "^4.8.2"
+    "typescript": "^4.8.4"
   }
 }
