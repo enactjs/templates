@@ -15,5 +15,5 @@ script:
     - echo -e "\x1b\x5b35;1m*** Starting eslint...\x1b\x5b0m"
     - npm run lint -- -- --report-unused-disable-directives --max-warnings 0 .
     - cd ../../..
-    - npm run lint -- --report-unused-disable-directives --max-warnings 0 .
+    - npm run lint -- --report-unused-disable-directives --max-warnings 0
     - echo -e "\x1b\x5b35;1m*** eslint complete\x1b\x5b0m"
