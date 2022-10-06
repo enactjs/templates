@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "enact clean",
-    "lint": "enact lint",
+    "lint": "enact lint --strict",
     "test": "enact test",
     "test-watch": "enact test --watch",
     "transpile": "enact transpile"
