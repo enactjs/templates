@@ -22,6 +22,6 @@
     "access": "public"
   },
   "dependencies": {
-    "chalk": "^5.1.2"
+    "chalk": "^4.1.0"
   }
 }
