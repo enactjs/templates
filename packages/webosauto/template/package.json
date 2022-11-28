@@ -30,7 +30,7 @@
     "dist/*"
   ],
   "dependencies": {
-    "@enact/agate": "^2.0.1",
+    "@enact/agate": "^2.0.2",
     "@enact/core": "^4.5.2",
     "@enact/i18n": "^4.5.2",
     "@enact/spotlight": "^4.5.2",
@@ -40,6 +40,6 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "web-vitals": "^3.0.4"
+    "web-vitals": "^3.1.0"
   }
 }

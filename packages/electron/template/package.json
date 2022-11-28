@@ -52,14 +52,14 @@
     "@enact/spotlight": "^4.5.2",
     "@enact/ui": "^4.5.2",
     "@enact/webos": "^4.5.2",
-    "electron": "^21.2.0",
+    "electron": "^21.3.1",
     "ilib": "^14.15.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "electron-packager": "^17.0.0",
+    "electron-packager": "^17.1.1",
     "electron-rebuild": "^3.2.9",
     "foreman": "^3.0.1"
   }
