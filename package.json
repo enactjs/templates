@@ -17,26 +17,14 @@
     "lerna": "lerna",
     "lint": "eslint ."
   },
+  "eslintConfig": {
+    "extends": "enact-proxy"
+  },
   "eslintIgnore": [
-    ".eslintrc.js",
-    "node_modules",
-    "packages/theme/template"
+    "node_modules"
   ],
   "devDependencies": {
-    "@babel/eslint-plugin": "^7.19.1",
-    "@typescript-eslint/eslint-plugin": "^5.44.0",
-    "@typescript-eslint/parser": "^5.44.0",
-    "eslint": "^8.28.0",
-    "eslint-config-enact": "^4.1.2",
-    "eslint-plugin-enact": "^1.0.1",
-    "eslint-plugin-jest": "^27.1.6",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.31.11",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-testing-library": "^5.9.1",
-    "lerna": "^6.0.3",
-    "react": "^18.2.0",
-    "typescript": "^4.9.3"
+    "eslint-config-enact-proxy": "^1.0.5",
+    "lerna": "^6.0.1"
   }
 }
