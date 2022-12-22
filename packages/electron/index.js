@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 module.exports = {
 	complete: ({directory, name}) => {
 		console.log();
