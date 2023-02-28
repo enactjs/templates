@@ -4,7 +4,11 @@ node_js:
     - "node"
 sudo: false
 install:
-    - npm install -g enactjs/cli#develop
+    - git clone --branch=develop --depth 1 https://github.com/enactjs/cli ../cli
+    - pushd ../cli
+    - npm install
+    - npm link
+    - popd
     - npm install -g eslint
     - npm install
     - cd ./packages/theme/template
