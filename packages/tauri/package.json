@@ -8,7 +8,6 @@
     "serve": "enact serve",
     "pack": "enact pack",
 	"pack-p": "enact pack -p",
-    "preview": "vite preview",
 	"watch": "enact pack --watch",
 	"clean": "enact clean bin",
 	"lint": "enact lint  -- --env=browser,node --ignore-pattern \"bin/*\" .",
