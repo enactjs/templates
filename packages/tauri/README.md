@@ -1,7 +1,17 @@
-# Tauri + React
+# @enact/template-tauri
 
-This template should help get you started developing with Tauri and React in Vite.
+A template generator for @enact/cli to create Enact-based Electron applications.
 
-## Recommended IDE Setup
+## Installation
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+The Enact CLI itself can install this via NPM or git URI.
+```
+enact template install @enact/template-tauri
+```
+
+## Usage
+
+Once installed, you can specify the `tauri` template during new application creation:
+```
+enact create -t tauri MyApp
+```
