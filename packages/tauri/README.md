@@ -1,6 +1,6 @@
 # @enact/template-tauri
 
-A template generator for @enact/cli to create Enact-based Electron applications.
+A template generator for @enact/cli to create Enact-based Tauri applications.
 
 ## Installation
 

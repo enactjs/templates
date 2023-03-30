@@ -7,7 +7,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/enactjs/templates.git",
-    "directory": "packages/electron"
+    "directory": "packages/tauri"
   },
   "homepage": "https://github.com/enactjs/templates/tree/master/packages/tauri#readme",
   "license": "Apache-2.0",

@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "1.0.0",
-  "description": "A general template for an Enact Electron application.",
+  "description": "A general template for an Enact Tauri application.",
   "author": "",
   "main": "renderer/index.js",
   "scripts": {
