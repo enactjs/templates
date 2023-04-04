@@ -1,6 +1,6 @@
 {
   "name": "@enact/template-cordova",
-  "version": "4.5.2",
+  "version": "4.5.3",
   "description": "A template generator for Enact Cordova applications.",
   "main": "index.js",
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
@@ -9,7 +9,7 @@
     "url": "https://github.com/enactjs/templates.git",
     "directory": "packages/cordova"
   },
-  "homepage": "https://github.com/enactjs/templates/tree/master/packages/cordova#readme", 
+  "homepage": "https://github.com/enactjs/templates/tree/master/packages/cordova#readme",
   "license": "Apache-2.0",
   "engines": {
     "node": ">=6.4.0"
