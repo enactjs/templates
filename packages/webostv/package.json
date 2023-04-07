@@ -1,6 +1,6 @@
 {
   "name": "@enact/template-webostv",
-  "version": "4.5.2",
+  "version": "4.5.3",
   "description": "A template generator for Enact applications for webOS TVs",
   "main": "index.js",
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
@@ -9,7 +9,7 @@
     "url": "https://github.com/enactjs/templates.git",
     "directory": "packages/webostv"
   },
-  "homepage": "https://github.com/enactjs/templates/tree/master/packages/webostv#readme", 
+  "homepage": "https://github.com/enactjs/templates/tree/master/packages/webostv#readme",
   "license": "Apache-2.0",
   "engines": {
     "node": ">=6.4.0"
