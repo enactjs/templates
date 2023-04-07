@@ -1,6 +1,6 @@
 {
   "name": "@enact/template-webosauto",
-  "version": "4.5.2",
+  "version": "4.5.3",
   "description": "A template generator for Enact applications for webOS Auto",
   "main": "index.js",
   "author": "Dave Freeman <dave.freeman@lge.com>",
@@ -9,7 +9,7 @@
     "url": "https://github.com/enactjs/templates.git",
     "directory": "packages/webosauto"
   },
-  "homepage": "https://github.com/enactjs/templates/tree/master/packages/webosauto#readme", 
+  "homepage": "https://github.com/enactjs/templates/tree/master/packages/webosauto#readme",
   "license": "Apache-2.0",
   "engines": {
     "node": ">=6.4.0"

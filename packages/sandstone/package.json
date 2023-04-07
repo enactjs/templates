@@ -1,6 +1,6 @@
 {
   "name": "@enact/template-sandstone",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "A template generator for Enact Sandstone applications.",
   "main": "index.js",
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
@@ -9,7 +9,7 @@
     "url": "https://github.com/enactjs/templates.git",
     "directory": "packages/sandstone"
   },
-  "homepage": "https://github.com/enactjs/templates/tree/master/packages/sandstone#readme", 
+  "homepage": "https://github.com/enactjs/templates/tree/master/packages/sandstone#readme",
   "license": "Apache-2.0",
   "engines": {
     "node": ">=6.4.0"
