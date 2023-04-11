@@ -1,6 +1,6 @@
 {
   "name": "@enact/template-moonstone",
-  "version": "4.5.2",
+  "version": "4.5.3",
   "description": "A template generator for Enact Moonstone applications.",
   "main": "index.js",
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
@@ -9,7 +9,7 @@
     "url": "https://github.com/enactjs/templates.git",
     "directory": "packages/moonstone"
   },
-  "homepage": "https://github.com/enactjs/templates/tree/master/packages/moonstone#readme", 
+  "homepage": "https://github.com/enactjs/templates/tree/master/packages/moonstone#readme",
   "license": "Apache-2.0",
   "engines": {
     "node": ">=6.4.0"
