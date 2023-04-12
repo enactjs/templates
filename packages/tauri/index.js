@@ -5,13 +5,15 @@ module.exports = {
 		console.log();
 		console.log('Inside that directory, you can run several NPM commands, including:');
 		console.log('	npm run serve');
-		console.log('		Starts the development server and Tauri shell using it.');
+		console.log('		Starts the enact app that is used inside Tauri.');
 		console.log('	npm run pack');
 		console.log('		Bundles the renderer into static files in development mode.');
 		console.log('	npm run pack-p');
 		console.log('		Bundles the renderer into static files in production mode.');
-		console.log('	npm run tauri');
-		console.log('		Runs the latest built renderer bundle in Tauri.');
+		console.log('	npm run tauri-dev');
+		console.log('		Builds and runs the Tauri app in dev mode.');
+		console.log('	npm run tauri-build');
+		console.log('		Builds the latest Tauri app.');
 		console.log('	npm run test');
 		console.log('		Starts the test runner.');
 		console.log();
