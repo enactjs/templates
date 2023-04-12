@@ -14,7 +14,8 @@
 	"license": "enact license",
 	"test": "enact test",
 	"test-watch": "enact test --watch",
-	"tauri": "tauri dev"
+	"tauri-dev": "tauri dev",
+	"tauri-build": "tauri build"
   },
   "license": "UNLICENSED",
   "private": true,
