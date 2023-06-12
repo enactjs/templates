@@ -28,10 +28,10 @@
     "dist/*"
   ],
   "dependencies": {
-    "@enact/core": "^4.6.2",
-    "@enact/i18n": "^4.6.2",
-    "@enact/spotlight": "^4.6.2",
-    "@enact/ui": "^4.6.2",
+    "@enact/core": "^4.7.1",
+    "@enact/i18n": "^4.7.1",
+    "@enact/spotlight": "^4.7.1",
+    "@enact/ui": "^4.7.1",
     "classnames": "^2.3.2",
     "prop-types": "^15.8.1",
     "ramda": "^0.29.0",
