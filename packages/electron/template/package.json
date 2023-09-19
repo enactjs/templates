@@ -46,20 +46,20 @@
     "bin/*"
   ],
   "dependencies": {
-    "@enact/core": "^4.7.2",
-    "@enact/i18n": "^4.7.2",
-    "@enact/sandstone": "^2.7.4",
-    "@enact/spotlight": "^4.7.2",
-    "@enact/ui": "^4.7.2",
-    "@enact/webos": "^4.7.2",
-    "electron": "^26.0.0",
-    "ilib": "^14.17.0",
+    "@enact/core": "^4.7.5",
+    "@enact/i18n": "^4.7.5",
+    "@enact/sandstone": "^2.7.9",
+    "@enact/spotlight": "^4.7.5",
+    "@enact/ui": "^4.7.5",
+    "@enact/webos": "^4.7.5",
+    "electron": "^26.2.1",
+    "ilib": "^14.18.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "electron-packager": "^17.1.1",
+    "electron-packager": "^17.1.2",
     "electron-rebuild": "^3.2.9",
     "eslint-config-enact-proxy": "^1.0.6",
     "foreman": "^3.0.1"
