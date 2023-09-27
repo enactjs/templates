@@ -30,7 +30,7 @@
     "theme": "sandstone"
   },
   "browserslist": [
-    "Electron >=5.0"
+    "Electron >=26.0"
   ],
   "eslintConfig": {
     "extends": "enact-proxy",
@@ -46,14 +46,14 @@
     "bin/*"
   ],
   "dependencies": {
-    "@enact/core": "^4.7.1",
-    "@enact/i18n": "^4.7.1",
-    "@enact/sandstone": "^2.7.1",
-    "@enact/spotlight": "^4.7.1",
-    "@enact/ui": "^4.7.1",
-    "@enact/webos": "^4.7.1",
-    "electron": "^24.1.2",
-    "ilib": "^14.17.0",
+    "@enact/core": "^4.7.6",
+    "@enact/i18n": "^4.7.6",
+    "@enact/sandstone": "^2.7.10",
+    "@enact/spotlight": "^4.7.6",
+    "@enact/ui": "^4.7.6",
+    "@enact/webos": "^4.7.6",
+    "electron": "^26.0.0",
+    "ilib": "^14.18.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -61,7 +61,7 @@
   "devDependencies": {
     "electron-packager": "^17.1.1",
     "electron-rebuild": "^3.2.9",
-    "eslint-config-enact-proxy": "^1.0.5",
+    "eslint-config-enact-proxy": "^1.0.7",
     "foreman": "^3.0.1"
   }
 }
