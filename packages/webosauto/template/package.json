@@ -30,12 +30,12 @@
     "dist/*"
   ],
   "dependencies": {
-    "@enact/agate": "^2.0.6",
-    "@enact/core": "^4.7.5",
-    "@enact/i18n": "^4.7.5",
-    "@enact/spotlight": "^4.7.5",
-    "@enact/ui": "^4.7.5",
-    "@enact/webos": "^4.7.5",
+    "@enact/agate": "^2.0.7",
+    "@enact/core": "^4.7.6",
+    "@enact/i18n": "^4.7.6",
+    "@enact/spotlight": "^4.7.6",
+    "@enact/ui": "^4.7.6",
+    "@enact/webos": "^4.7.6",
     "ilib": "^14.18.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -43,6 +43,6 @@
     "web-vitals": "^3.4.0"
   },
   "devDependencies": {
-    "eslint-config-enact-proxy": "^1.0.6"
+    "eslint-config-enact-proxy": "^1.0.7"
   }
 }
