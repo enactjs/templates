@@ -10,7 +10,6 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "bootstrap": "lerna bootstrap",
     "publish": "lerna publish",
     "publish-next": "lerna publish --npm-tag=next",
     "clean": "lerna clean --yes",
@@ -25,6 +24,6 @@
   ],
   "devDependencies": {
     "eslint-config-enact-proxy": "^1.0.7",
-    "lerna": "^6.6.2"
+    "lerna": "^7.3.0"
   }
 }
