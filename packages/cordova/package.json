@@ -1,6 +1,6 @@
 {
   "name": "@enact/template-cordova",
-  "version": "4.5.5",
+  "version": "4.5.6",
   "description": "A template generator for Enact Cordova applications.",
   "main": "index.js",
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
