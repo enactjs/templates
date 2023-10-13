@@ -1,16 +1,8 @@
 {
-  "lerna": "4.0.0",
+  "lerna": "7.3.1",
   "version": "independent",
   "packages": [
     "packages/*"
   ],
-  "skipGit": true,
-  "command": {
-    "bootstrap": {
-      "ci": false,
-      "npmClientArgs": [
-        "--no-package-lock"
-      ]
-    }
-  }  
+  "skipGit": true
 }
