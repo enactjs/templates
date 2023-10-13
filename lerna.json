@@ -1,5 +1,4 @@
 {
-  "lerna": "4.0.0",
   "version": "independent",
   "packages": [
     "packages/*"
@@ -12,5 +11,6 @@
         "--no-package-lock"
       ]
     }
-  }  
+  },
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json"
 }
