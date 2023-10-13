@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const chalk = require('chalk');
 
 const capitalize = name => name.charAt(0).toUpperCase() + name.slice(1);
 const capEachWord = text => text.split(/[-_\s]/).map(capitalize).join('');
@@ -48,39 +47,41 @@ module.exports = {
 		});
 	},
 	complete: ({directory, name}) => {
-		// Output a notice when using an unstable template release with prerelease Enact
-		const meta = require('./package.json');
-		const pre = ['next', 'pre', 'alpha', 'beta', 'rc'];
-		if (pre.some(id => meta.version.includes(id))) {
-			console.log('NOTICE: This theme uses prerelease Enact code and may '
-					+ 'contain unstable or unfinished APIs.');
-			console.log();
-		}
+		import('chalk').then(({default: chalk}) => {
+			// Output a notice when using an unstable template release with prerelease Enact
+			const meta = require('./package.json');
+			const pre = ['next', 'pre', 'alpha', 'beta', 'rc'];
+			if (pre.some(id => meta.version.includes(id))) {
+				console.log('NOTICE: This theme uses prerelease Enact code and may ' +
+					'contain unstable or unfinished APIs.');
+				console.log();
+			}
 
-		// After everything is complete, output message to user
-		console.log();
-		console.log('Success! Created ' + name + ' at ' + directory);
-		console.log();
-		console.log('Inside that directory, you can run several npm commands, including:');
-		console.log(chalk.cyan('	npm run transpile'));
-		console.log('		Transpiles into publishable ES5 package');
-		console.log(chalk.cyan('	npm run test'));
-		console.log('		Starts the test runner.');
-		console.log(chalk.cyan('	npm run lint'));
-		console.log('		Lints the source code.');
-		console.log();
-		console.log('We suggest that you begin by typing:');
-		if (path.resolve(process.cwd()) !== path.resolve(directory)) {
-			console.log(chalk.cyan('	cd ' + path.relative(process.cwd(), directory)));
-		}
-		console.log('	' + chalk.cyan('npm run transpile'));
-		console.log('	' + chalk.cyan('npm link build'));
-		console.log('This will build your theme library into ES5/CSS and then link that '
-			+ 'output into the global NPM userspace, where you can then '
-			+ chalk.cyan('npm link ' + name) + ' to link the library into an app. '
-			+ 'Re-transpile anytime the theme is updated your app will automatically '
-			+ 'receive those changes.');
-		console.log();
-		console.log('Have fun!');
+			// After everything is complete, output message to user
+			console.log();
+			console.log('Success! Created ' + name + ' at ' + directory);
+			console.log();
+			console.log('Inside that directory, you can run several npm commands, including:');
+			console.log(chalk.cyan('	npm run transpile'));
+			console.log('		Transpiles into publishable ES5 package');
+			console.log(chalk.cyan('	npm run test'));
+			console.log('		Starts the test runner.');
+			console.log(chalk.cyan('	npm run lint'));
+			console.log('		Lints the source code.');
+			console.log();
+			console.log('We suggest that you begin by typing:');
+			if (path.resolve(process.cwd()) !== path.resolve(directory)) {
+				console.log(chalk.cyan('	cd ' + path.relative(process.cwd(), directory)));
+			}
+			console.log('	' + chalk.cyan('npm run transpile'));
+			console.log('	' + chalk.cyan('npm link build'));
+			console.log('This will build your theme library into ES5/CSS and then link that ' +
+				'output into the global NPM userspace, where you can then ' +
+				chalk.cyan('npm link ' + name) + ' to link the library into an app. ' +
+				'Re-transpile anytime the theme is updated your app will automatically ' +
+				'receive those changes.');
+			console.log();
+			console.log('Have fun!');
+		});
 	}
 };
