@@ -56,7 +56,7 @@ module.exports = {
 		const pre = ['next', 'pre', 'alpha', 'beta', 'rc'];
 		if (pre.some(id => meta.version.includes(id))) {
 			console.log('NOTICE: This theme uses prerelease Enact code and may '
-				+ 'contain unstable or unfinished APIs.');
+					+ 'contain unstable or unfinished APIs.');
 			console.log();
 		}
 
