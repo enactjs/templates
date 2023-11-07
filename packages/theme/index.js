@@ -1,6 +1,9 @@
 const fs = require('fs');
 const path = require('path');
-const chalk = require('chalk');
+let chalk;
+import('chalk').then(({default: _chalk}) => {
+	chalk = _chalk;
+});
 
 const capitalize = name => name.charAt(0).toUpperCase() + name.slice(1);
 const capEachWord = text => text.split(/[-_\s]/).map(capitalize).join('');
