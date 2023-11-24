@@ -28,13 +28,13 @@
     "dist/*"
   ],
   "dependencies": {
-    "@enact/core": "^4.7.6",
-    "@enact/i18n": "^4.7.6",
-    "@enact/spotlight": "^4.7.6",
-    "@enact/ui": "^4.7.6",
+    "@enact/core": "^4.7.8",
+    "@enact/i18n": "^4.7.8",
+    "@enact/spotlight": "^4.7.8",
+    "@enact/ui": "^4.7.8",
     "classnames": "^2.3.2",
     "prop-types": "^15.8.1",
-    "ramda": "^0.29.0",
+    "ramda": "^0.29.1",
     "react": "^18.2.0"
   },
   "peerDependencies": {
@@ -42,6 +42,6 @@
   },
   "devDependencies": {
     "eslint-config-enact-proxy": "^1.0.7",
-    "ilib": "^14.18.0"
+    "ilib": "^14.19.0"
   }
 }
