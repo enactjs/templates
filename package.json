@@ -1,6 +1,6 @@
 {
   "name": "@enact/templates",
-  "version": "4.5.5",
+  "version": "4.5.6",
   "description": "A collection of Enact-based templates.",
   "private": true,
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
@@ -21,7 +21,8 @@
     "extends": "enact-proxy"
   },
   "eslintIgnore": [
-    "node_modules"
+    "node_modules",
+    "packages/theme"
   ],
   "devDependencies": {
     "eslint-config-enact-proxy": "^1.0.7",
