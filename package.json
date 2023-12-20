@@ -1,6 +1,6 @@
 {
   "name": "@enact/templates",
-  "version": "4.5.5",
+  "version": "4.5.6",
   "description": "A collection of Enact-based templates.",
   "private": true,
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
@@ -10,7 +10,7 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "lerna exec -- npm --loglevel error --no-package-lock install",
     "publish": "lerna publish",
     "publish-next": "lerna publish --npm-tag=next",
     "clean": "lerna clean --yes",
@@ -21,10 +21,11 @@
     "extends": "enact-proxy"
   },
   "eslintIgnore": [
-    "node_modules"
+    "node_modules",
+    "packages/theme"
   ],
   "devDependencies": {
     "eslint-config-enact-proxy": "^1.0.7",
-    "lerna": "^6.6.2"
+    "lerna": "^7.4.2"
   }
 }

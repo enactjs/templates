@@ -1,6 +1,6 @@
 {
   "name": "@enact/template-sandstone",
-  "version": "1.5.5",
+  "version": "1.5.6",
   "description": "A template generator for Enact Sandstone applications.",
   "main": "index.js",
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
