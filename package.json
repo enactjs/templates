@@ -21,7 +21,8 @@
     "extends": "enact-proxy"
   },
   "eslintIgnore": [
-    "node_modules"
+    "node_modules",
+    "packages/theme"
   ],
   "devDependencies": {
     "eslint-config-enact-proxy": "^1.0.7",
