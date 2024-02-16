@@ -52,7 +52,7 @@
     "@enact/spotlight": "^4.7.9",
     "@enact/ui": "^4.7.9",
     "@enact/webos": "^4.7.9",
-    "electron": "^26.6.1",
+    "electron": "^28.1.4",
     "ilib": "^14.19.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
