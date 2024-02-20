@@ -8,7 +8,7 @@ Templates/code created by these generators are unlicensed and can be licensed ho
 
 > Unless otherwise specified, all content, including all source code files and documentation files in this repository are:
 >
-> Copyright (c) 2018-2023 LG Electronics
+> Copyright (c) 2018-2024 LG Electronics
 >
 > Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 >
