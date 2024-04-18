@@ -42,6 +42,6 @@
   },
   "devDependencies": {
     "eslint-config-enact-proxy": "^1.0.7",
-    "ilib": "^14.19.0"
+    "ilib": "14.19.0"
   }
 }
