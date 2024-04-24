@@ -25,7 +25,7 @@
     "packages/theme"
   ],
   "devDependencies": {
-    "eslint": "^9.1.1",
+    "eslint": "^8.57.0",
     "eslint-config-enact-proxy": "^1.0.7",
     "lerna": "^7.4.2"
   }
