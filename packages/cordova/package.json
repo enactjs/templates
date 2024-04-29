@@ -20,6 +20,6 @@
   "dependencies": {
     "cordova-config": "^0.7.0",
     "cross-spawn": "^7.0.3",
-    "fs-extra": "^10.1.0"
+    "fs-extra": "^11.2.0"
   }
 }
