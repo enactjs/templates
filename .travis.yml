@@ -9,6 +9,7 @@ install:
     - npm install
     - npm link
     - popd
+    - npm install -g eslint@8.57.0
     - npm install
     - cd ./packages/theme/template
     - npm install
