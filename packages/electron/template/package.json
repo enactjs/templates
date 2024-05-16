@@ -30,7 +30,7 @@
     "theme": "sandstone"
   },
   "browserslist": [
-    "Electron >=26.0"
+    "Electron >=28.0"
   ],
   "eslintConfig": {
     "extends": "enact-proxy",
@@ -52,7 +52,7 @@
     "@enact/spotlight": "^4.8.0",
     "@enact/ui": "^4.8.0",
     "@enact/webos": "^4.8.0",
-    "electron": "^28.2.10",
+    "electron": "^30.0.1",
     "ilib": "14.19.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
