@@ -4,9 +4,9 @@ node_js:
     - node
 sudo: false
 install:
-    - git clone --branch=develop --depth 1 https://github.com/enactjs/cli ../cli
+    - git clone --branch=feature/WRQ-21653 --depth 1 https://github.com/enactjs/cli ../cli
     - pushd ../cli
-    - npm install
+    - npm install --force
     - npm link
     - popd
     - npm install -g eslint@8.57.0
