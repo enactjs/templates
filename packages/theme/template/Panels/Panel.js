@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 import Skinnable from '../Skinnable';
 
-import componentCss from './Panel.module.less';
+import * as componentCss from './Panel.module.less';
 
 /**
  * A Panel is the standard view container used inside a [Panels]{@link my-theme/Panels.Panels} view

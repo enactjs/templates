@@ -15,7 +15,7 @@ import compose from 'ramda/src/compose';
 
 import Skinnable from '../Skinnable';
 
-import componentCss from './Item.module.less';
+import * as componentCss from './Item.module.less';
 
 /**
  * A MyTheme styled item.

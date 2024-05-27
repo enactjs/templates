@@ -15,7 +15,7 @@ import PropTypes from 'prop-types';
 
 import ToggleIcon from '../ToggleIcon';
 
-import css from './Checkbox.module.less';
+import * as css from './Checkbox.module.less';
 
 /**
  * A checkbox component, ready to use in MyTheme applications.

@@ -16,7 +16,7 @@ import Skinnable from '../Skinnable';
 
 import screenTypes from './screenTypes.json';
 
-import css from './ThemeDecorator.module.less';
+import * as css from './ThemeDecorator.module.less';
 
 /**
  * Default config for {@link my-theme/ThemeDecorator.ThemeDecorator}.

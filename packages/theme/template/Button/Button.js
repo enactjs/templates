@@ -19,7 +19,7 @@ import compose from 'ramda/src/compose';
 import Icon from '../Icon';
 import Skinnable from '../Skinnable';
 
-import componentCss from './Button.module.less';
+import * as componentCss from './Button.module.less';
 
 /**
  * A button component.

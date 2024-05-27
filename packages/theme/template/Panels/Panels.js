@@ -26,7 +26,7 @@ import Skinnable from '../Skinnable';
 
 import Panel from './Panel';
 
-import componentCss from './Panels.module.less';
+import * as componentCss from './Panels.module.less';
 
 /**
  * Basic Panels component using a `SlideLeftArranger` [arranger]{@link ui/ViewManager.Arranger}

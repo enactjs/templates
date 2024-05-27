@@ -31,7 +31,7 @@ import compose from 'ramda/src/compose';
 import {ItemBase} from '../Item';
 import Skinnable from '../Skinnable';
 
-import componentCss from './SlotItem.module.less';
+import * as componentCss from './SlotItem.module.less';
 
 /**
  * A MyTheme styled SlotItem without any behavior.

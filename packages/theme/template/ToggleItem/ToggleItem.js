@@ -29,7 +29,7 @@ import compose from 'ramda/src/compose';
 import Skinnable from '../Skinnable';
 import {SlotItemBase} from '../SlotItem';
 
-import componentCss from './ToggleItem.module.less';
+import * as componentCss from './ToggleItem.module.less';
 
 /**
  * A MyTheme styled toggle [Item]{@link my-theme/Item} without any behavior.

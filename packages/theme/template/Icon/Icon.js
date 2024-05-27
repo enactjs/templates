@@ -18,7 +18,7 @@ import compose from 'ramda/src/compose';
 
 import Skinnable from '../Skinnable';
 
-import componentCss from './Icon.module.less';
+import * as componentCss from './Icon.module.less';
 
 /**
  * Renders a MyTheme-styled icon without any behavior.

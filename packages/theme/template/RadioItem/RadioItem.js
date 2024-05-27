@@ -15,7 +15,7 @@ import PropTypes from 'prop-types';
 import ToggleIcon from '../ToggleIcon';
 import ToggleItem from '../ToggleItem';
 
-import componentCss from './RadioItem.module.less';
+import * as componentCss from './RadioItem.module.less';
 
 /**
  * Renders an `Item` with a radio-dot icon.
