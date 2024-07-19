@@ -23,13 +23,13 @@
 import kind from '@enact/core/kind';
 import Spottable from '@enact/spotlight/Spottable';
 import {ItemDecorator as UiItemDecorator} from '@enact/ui/Item';
-import {SlotItemBase as UiSlotItemBase, SlotItemDecorator as UiSlotItemDecorator} from '@enact/ui/SlotItem';
 
 import PropTypes from 'prop-types';
 import compose from 'ramda/src/compose';
 
 import {ItemBase} from '../Item';
 import Skinnable from '../Skinnable';
+import {SlotItemBase as UiSlotItemBase, SlotItemDecorator as UiSlotItemDecorator} from '../UiSlotItem';
 
 import componentCss from './SlotItem.module.less';
 
@@ -38,7 +38,7 @@ import componentCss from './SlotItem.module.less';
  *
  * @class SlotItemBase
  * @memberof my-theme/SlotItem
- * @extends ui/SlotItem.SlotItemBase
+ * @extends my-theme/UiSlotItem.SlotItemBase
  * @omit component
  * @mixes my-theme/Item.ItemBase
  * @ui
@@ -85,7 +85,7 @@ const SlotItemBase = kind({
  *
  * @class SlotItemDecorator
  * @memberof my-theme/SlotItem
- * @mixes ui/SlotItem.SlotItemDecorator
+ * @mixes my-theme/UiSlotItem.SlotItemDecorator
  * @mixes ui/Toggleable
  * @mixes spotlight.Spottable
  * @mixes my-theme/Skinnable

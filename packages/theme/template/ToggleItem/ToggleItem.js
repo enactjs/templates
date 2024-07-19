@@ -22,12 +22,12 @@
 import kind from '@enact/core/kind';
 import EnactPropTypes from '@enact/core/internal/prop-types';
 import Spottable from '@enact/spotlight/Spottable';
-import {ToggleItemBase as UiToggleItem, ToggleItemDecorator as UiToggleItemDecorator} from '@enact/ui/ToggleItem';
 import PropTypes from 'prop-types';
 import compose from 'ramda/src/compose';
 
 import Skinnable from '../Skinnable';
 import {SlotItemBase} from '../SlotItem';
+import {ToggleItemBase as UiToggleItem, ToggleItemDecorator as UiToggleItemDecorator} from '../UiToggleItem';
 
 import componentCss from './ToggleItem.module.less';
 
@@ -112,7 +112,7 @@ const ToggleItemBase = kind({
  *
  * @class ToggleItemDecorator
  * @memberof my-theme/ToggleItem
- * @mixes ui/ToggleItem.ToggleItemDecorator
+ * @mixes my-theme/UiToggleItem.ToggleItemDecorator
  * @mixes spotlight/Spottable.Spottable
  * @mixes my-theme/Skinnable
  * @hoc
