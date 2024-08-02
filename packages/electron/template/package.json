@@ -24,6 +24,9 @@
     "test-watch": "enact test --watch"
   },
   "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20.14.0"
+  },
   "private": true,
   "repository": "",
   "enact": {
