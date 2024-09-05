@@ -41,7 +41,7 @@
     "ilib": "^14.19.0 || ^14.19.0-webos1"
   },
   "devDependencies": {
-    "eslint-config-enact-proxy": "^1.0.7",
-    "ilib": "^14.19.0"
+    "eslint-config-enact-proxy": "^1.0.8",
+    "ilib": "^14.20.0"
   }
 }
