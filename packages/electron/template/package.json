@@ -33,7 +33,7 @@
     "theme": "sandstone"
   },
   "browserslist": [
-    "Electron >=28.0"
+    "Electron >=30.0"
   ],
   "eslintConfig": {
     "extends": "enact-proxy",
