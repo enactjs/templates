@@ -25,7 +25,7 @@
   },
   "license": "UNLICENSED",
   "engines": {
-    "node": ">=20.16.0"
+    "node": ">=20.17.0"
   },
   "private": true,
   "repository": "",
@@ -55,7 +55,7 @@
     "@enact/spotlight": "^5.0.0-alpha.1",
     "@enact/ui": "^5.0.0-alpha.1",
     "@enact/webos": "^5.0.0-alpha.1",
-    "electron": "^31.4.0",
+    "electron": "^32.1.0",
     "ilib": "^14.20.0",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
