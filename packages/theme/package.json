@@ -1,6 +1,6 @@
 {
   "name": "@enact/template-theme",
-  "version": "5.0.0-alpha.1",
+  "version": "5.0.0-alpha.2",
   "description": "A template generator for Enact theme libraries.",
   "main": "index.js",
   "contributors": [
