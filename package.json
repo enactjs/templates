@@ -1,6 +1,6 @@
 {
   "name": "@enact/templates",
-  "version": "4.8.0",
+  "version": "5.0.0-alpha.2",
   "description": "A collection of Enact-based templates.",
   "private": true,
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
@@ -28,7 +28,7 @@
     "packages/theme"
   ],
   "devDependencies": {
-    "eslint-config-enact-proxy": "^1.0.7",
-    "lerna": "^8.1.2"
+    "eslint-config-enact-proxy": "^1.0.8",
+    "lerna": "^8.1.9"
   }
 }
