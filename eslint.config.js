@@ -1,4 +1,4 @@
-const eslintEnactProxy = require('eslint-config-enact-proxy/strict');
+const eslintEnactProxy = require('eslint-config-enact-proxy');
 const { FlatCompat } = require("@eslint/eslintrc");
 
 const compat = new FlatCompat({});
