@@ -1,9 +1,9 @@
 {
   "name": "@enact/template-limestone",
-  "version": "3.0.0-alpha.2",
+  "version": "1.0.0-alpha.1",
   "description": "A template generator for Enact Limestone applications.",
   "main": "index.js",
-  "author": "Jason Robitaille <jason.robitaille@lge.com>",
+  "author": "Seungho Park <seunghoh.park@lge.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/enactjs/templates.git",
@@ -12,7 +12,7 @@
   "homepage": "https://github.com/enactjs/templates/tree/master/packages/limestone#readme",
   "license": "Apache-2.0",
   "engines": {
-    "node": ">=6.4.0"
+    "node": ">=20.5.0"
   },
   "publishConfig": {
     "access": "public"
