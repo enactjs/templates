@@ -1,7 +1,7 @@
 This project was bootstrapped with [@enact/cli](https://github.com/enactjs/cli).
 
 Below you will find some information on how to perform common tasks.
-You can find the most recent version of this guide [here](https://github.com/enactjs/templates/blob/master/packages/cordova/template/README.md).
+You can find the most recent version of this guide [here](https://github.com/enactjs/templates/blob/master/packages/limestone/template/README.md).
 Additional documentation on @enact/cli can be found [here](https://github.com/enactjs/cli/blob/master/docs/index.md).
 
 ## Folder Structure
@@ -13,10 +13,6 @@ my-app/
   README.md
   .gitignore
   node_modules/
-  platforms/
-  plugins/
-  config.xml
-  html-template.ejs
   package.json
   src/
     App/
@@ -27,6 +23,7 @@ my-app/
     views/
       MainPanel.js
     index.js
+    reportWebVitals.js
   resources/
 ```
 
@@ -67,9 +64,9 @@ Deletes previous build fragments from ./dist.
 
 Runs the Enact configuration of Eslint on the project for syntax analysis.
 
-### `npm run test`, `npm run test-json`, and `npm run test-watch`
+### `npm run test` and `npm run test-watch`
 
-These tasks will execute all valid tests (files that end in `-specs.js`) that are within the project directory. The `test` is a standard execution pass, `test-json` uses a json reporter for output, and `test-watch` will set up a watcher to re-execute tests when files change.
+These tasks will execute all valid tests (files that end in `-specs.js`) that are within the project directory. The `test` is a standard single execution pass, while `test-watch` will set up a watcher to re-execute tests when files change.
 
 ## Enact Build Options
 
