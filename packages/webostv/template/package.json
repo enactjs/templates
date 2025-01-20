@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "1.0.0",
-  "description": "A general template for an Enact Sandstone application for webOS TVs",
+  "description": "A general template for an Enact Limestone application for webOS TVs",
   "author": "",
   "main": "src/index.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "npm" : ">=6.9.0"
   },
   "enact": {
-    "theme": "sandstone"
+    "theme": "limestone"
   },
   "eslintConfig": {
     "extends": "enact-proxy"
@@ -35,7 +35,7 @@
   "dependencies": {
     "@enact/core": "^5.0.0-alpha.2",
     "@enact/i18n": "^5.0.0-alpha.2",
-    "@enact/sandstone": "^3.0.0-alpha.2",
+    "@enact/limestone": "^1.0.0-alpha.1",
     "@enact/spotlight": "^5.0.0-alpha.2",
     "@enact/ui": "^5.0.0-alpha.2",
     "@enact/webos": "^5.0.0-alpha.2",
