@@ -1,6 +1,6 @@
-import Button from '@enact/limestone/Button';
+import Button from '@enact/sandstone/Button';
 import kind from '@enact/core/kind';
-import {Panel, Header} from '@enact/limestone/Panels';
+import {Panel, Header} from '@enact/sandstone/Panels';
 
 const MainPanel = kind({
 	name: 'MainPanel',
