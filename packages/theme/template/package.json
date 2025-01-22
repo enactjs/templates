@@ -28,20 +28,20 @@
     "dist/*"
   ],
   "dependencies": {
-    "@enact/core": "^5.0.0-alpha.2",
-    "@enact/i18n": "^5.0.0-alpha.2",
-    "@enact/spotlight": "^5.0.0-alpha.2",
-    "@enact/ui": "^5.0.0-alpha.2",
+    "@enact/core": "^5.0.0-alpha.4",
+    "@enact/i18n": "^5.0.0-alpha.4",
+    "@enact/spotlight": "^5.0.0-alpha.4",
+    "@enact/ui": "^5.0.0-alpha.4",
     "classnames": "^2.5.1",
     "prop-types": "^15.8.1",
     "ramda": "^0.30.1",
-    "react": "^18.3.1"
+    "react": "^19.0.0"
   },
   "peerDependencies": {
-    "ilib": "^14.20.0 || ^14.20.0-webos1"
+    "ilib": "^14.21.0 || ^14.21.0-webos1"
   },
   "devDependencies": {
     "eslint-config-enact-proxy": "^1.0.8",
-    "ilib": "^14.20.0"
+    "ilib": "^14.21.0"
   }
 }
