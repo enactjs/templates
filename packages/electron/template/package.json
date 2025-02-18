@@ -64,7 +64,7 @@
   "devDependencies": {
     "electron-packager": "^17.1.2",
     "electron-rebuild": "^3.2.9",
-    "eslint-config-enact-proxy": "^1.0.8",
+    "eslint-config-enact-proxy": "^1.0.9",
     "foreman": "^3.0.1"
   }
 }

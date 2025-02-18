@@ -42,6 +42,6 @@
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
-    "eslint-config-enact-proxy": "^1.0.8"
+    "eslint-config-enact-proxy": "^1.0.9"
   }
 }
