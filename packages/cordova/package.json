@@ -1,6 +1,6 @@
 {
   "name": "@enact/template-cordova",
-  "version": "5.0.0-alpha.2",
+  "version": "5.0.0-alpha.3",
   "description": "A template generator for Enact Cordova applications.",
   "main": "index.js",
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "cordova-config": "^0.7.0",
-    "cross-spawn": "^7.0.3",
+    "cross-spawn": "^7.0.6",
     "fs-extra": "^11.2.0"
   }
 }
