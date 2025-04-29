@@ -19,14 +19,6 @@
       "baseSize": 24
     }
   },
-  "eslintConfig": {
-    "extends": "enact-proxy/strict"
-  },
-  "eslintIgnore": [
-    "node_modules/*",
-    "build/*",
-    "dist/*"
-  ],
   "dependencies": {
     "@enact/core": "^5.0.0-alpha.4",
     "@enact/i18n": "^5.0.0-alpha.4",
@@ -41,7 +33,6 @@
     "ilib": "^14.21.0 || ^14.21.0-webos1"
   },
   "devDependencies": {
-    "eslint-config-enact-proxy": "^1.0.9",
     "ilib": "^14.21.0"
   }
 }
