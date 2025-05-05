@@ -7,7 +7,7 @@ import MainPanel from '../views/MainPanel';
 import css from './App.module.less';
 
 const App = kind({
-	name: 'App',
+	// name: 'App',
 
 	styles: {
 		css,

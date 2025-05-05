@@ -35,19 +35,6 @@
   "browserslist": [
     "Electron >=30.0"
   ],
-  "eslintConfig": {
-    "extends": "enact-proxy",
-    "env": {
-      "browser": true,
-      "node": true
-    }
-  },
-  "eslintIgnore": [
-    "node_modules/*",
-    "build/*",
-    "dist/*",
-    "bin/*"
-  ],
   "dependencies": {
     "@enact/core": "^5.0.0-alpha.4",
     "@enact/i18n": "^5.0.0-alpha.4",
@@ -64,7 +51,6 @@
   "devDependencies": {
     "electron-packager": "^17.1.2",
     "electron-rebuild": "^3.2.9",
-    "eslint-config-enact-proxy": "^1.0.9",
     "foreman": "^3.0.1"
   }
 }
