@@ -32,7 +32,7 @@
   "dependencies": {
     "@enact/core": "^5.0.0",
     "@enact/i18n": "^5.0.0",
-    "@enact/limestone": "github:enactjs/limestone#develop",
+    "@enact/limestone": "github:enactjs/limestone#feature/storybook9",
     "@enact/spotlight": "^5.0.0",
     "@enact/ui": "^5.0.0",
     "ilib": "^14.21.1",
