@@ -18,17 +18,9 @@
     "publish-next": "lerna publish --npm-tag=next",
     "clean": "lerna clean --yes",
     "lerna": "lerna",
-    "lint": "eslint ."
+    "lint": "enact lint ."
   },
-  "eslintConfig": {
-    "extends": "enact-proxy"
-  },
-  "eslintIgnore": [
-    "node_modules",
-    "packages/theme"
-  ],
   "devDependencies": {
-    "eslint-config-enact-proxy": "^1.0.9",
-    "lerna": "^8.1.9"
+    "lerna": "^8.2.2"
   }
 }
