@@ -35,36 +35,22 @@
   "browserslist": [
     "Electron >=30.0"
   ],
-  "eslintConfig": {
-    "extends": "enact-proxy",
-    "env": {
-      "browser": true,
-      "node": true
-    }
-  },
-  "eslintIgnore": [
-    "node_modules/*",
-    "build/*",
-    "dist/*",
-    "bin/*"
-  ],
   "dependencies": {
-    "@enact/core": "^5.0.0-alpha.4",
-    "@enact/i18n": "^5.0.0-alpha.4",
+    "@enact/core": "^5.0.0",
+    "@enact/i18n": "^5.0.0",
     "@enact/sandstone": "^3.0.0-alpha.4",
-    "@enact/spotlight": "^5.0.0-alpha.4",
-    "@enact/ui": "^5.0.0-alpha.4",
-    "@enact/webos": "^5.0.0-alpha.4",
-    "electron": "^32.2.5",
-    "ilib": "^14.21.0",
+    "@enact/spotlight": "^5.0.0",
+    "@enact/ui": "^5.0.0",
+    "@enact/webos": "^5.0.0",
+    "electron": "^36.4.0",
+    "ilib": "^14.21.1",
     "prop-types": "^15.8.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "electron-packager": "^17.1.2",
     "electron-rebuild": "^3.2.9",
-    "eslint-config-enact-proxy": "^1.0.9",
     "foreman": "^3.0.1"
   }
 }
