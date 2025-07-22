@@ -1,0 +1,47 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "A general template for an Enact Limestone application.",
+  "author": "",
+  "main": "src/index.js",
+  "scripts": {
+    "serve": "enact serve",
+    "pack": "enact pack",
+    "pack-p": "enact pack -p",
+    "watch": "enact pack --watch",
+    "clean": "enact clean",
+    "lint": "enact lint .",
+    "license": "enact license",
+    "test": "enact test",
+    "test-watch": "enact test --watch"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": "",
+  "enact": {
+    "theme": "limestone"
+  },
+  "eslintConfig": {
+    "extends": "enact-proxy"
+  },
+  "eslintIgnore": [
+    "node_modules/*",
+    "build/*",
+    "dist/*"
+  ],
+  "dependencies": {
+    "@enact/core": "^5.0.0",
+    "@enact/i18n": "^5.0.0",
+    "@enact/limestone": "github:enactjs/limestone#develop",
+    "@enact/spotlight": "^5.0.0",
+    "@enact/ui": "^5.0.0",
+    "ilib": "^14.21.1",
+    "prop-types": "^15.8.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "web-vitals": "^5.0.3"
+  },
+  "devDependencies": {
+    "eslint-config-enact-proxy": "^1.0.8"
+  }
+}
