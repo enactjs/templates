@@ -1,6 +1,6 @@
 {
   "name": "@enact/template-webostv",
-  "version": "5.0.0-alpha.3",
+  "version": "5.0.0",
   "description": "A template generator for Enact applications for webOS TVs",
   "main": "index.js",
   "author": "Jason Robitaille <jason.robitaille@lge.com>",

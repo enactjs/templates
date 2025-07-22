@@ -1,6 +1,6 @@
 {
   "name": "@enact/templates",
-  "version": "5.0.0-alpha.3",
+  "version": "5.0.0",
   "description": "A collection of Enact-based templates.",
   "private": true,
   "author": "Jason Robitaille <jason.robitaille@lge.com>",
