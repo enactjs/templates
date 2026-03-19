@@ -21,7 +21,7 @@
     "lint": "enact lint ."
   },
   "devDependencies": {
-    "lerna": "^9.0.5"
+    "lerna": "^9.0.7"
   },
   "overrides": {
     "tar": "^7.5.10"
