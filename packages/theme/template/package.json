@@ -34,5 +34,8 @@
   },
   "devDependencies": {
     "ilib": "^14.22.0"
+  },
+  "overrides": {
+    "react-is": "^19.0.0"
   }
 }
