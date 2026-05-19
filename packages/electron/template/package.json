@@ -25,7 +25,7 @@
   },
   "license": "UNLICENSED",
   "engines": {
-    "node": ">=20.18.0"
+    "node": ">=24.14.0"
   },
   "private": true,
   "repository": "",
@@ -36,17 +36,17 @@
     "Electron >=30.0"
   ],
   "dependencies": {
-    "@enact/core": "^5.0.0",
-    "@enact/i18n": "^5.0.0",
+    "@enact/core": "^5.4.3",
+    "@enact/i18n": "^5.4.3",
     "@enact/sandstone": "^3.0.0-alpha.4",
-    "@enact/spotlight": "^5.0.0",
-    "@enact/ui": "^5.0.0",
-    "@enact/webos": "^5.0.0",
-    "electron": "^36.4.0",
-    "ilib": "^14.21.1",
+    "@enact/spotlight": "^5.4.3",
+    "@enact/ui": "^5.4.3",
+    "@enact/webos": "^5.4.3",
+    "electron": "^41.0.3",
+    "ilib": "^14.21.2",
     "prop-types": "^15.8.1",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
     "electron-packager": "^17.1.2",

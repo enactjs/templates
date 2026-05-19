@@ -1,6 +1,6 @@
 {
   "name": "@enact/template-limestone",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "description": "A template generator for Enact Limestone applications.",
   "main": "index.js",
   "author": "Seungho Park <seunghoh.park@lge.com>",
