@@ -1,0 +1,56 @@
+name: CI Pipeline
+
+on:
+  workflow_call:
+    inputs:
+      checkout-ref:
+        description: 'Git ref to checkout (empty for default merge commit)'
+        type: string
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: ['node']
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.checkout-ref || github.ref }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Clone and setup Enact CLI
+        run: |
+          git clone --branch=release/7.2.x.develop --depth 1 https://github.com/enactjs/cli ../cli
+          pushd ../cli
+          npm install
+          npm link
+          popd
+
+      - name: Install project dependencies
+        run: |
+          npm install -g eslint@8.57.0
+          npm install
+
+      - name: Run ESLint
+        run: npm run lint -- --report-unused-disable-directives --max-warnings 0
+
+      - name: Lint and tests from theme template
+        run: |
+          pushd ./packages/theme/template
+          npm install
+          npm run lint -- --report-unused-disable-directives --max-warnings 0
+          npm run test
+          popd
