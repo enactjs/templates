@@ -20,19 +20,19 @@
     }
   },
   "dependencies": {
-    "@enact/core": "^5.4.2",
-    "@enact/i18n": "^5.4.2",
-    "@enact/spotlight": "^5.4.2",
-    "@enact/ui": "^5.4.2",
+    "@enact/core": "^5.5.0",
+    "@enact/i18n": "^5.5.0",
+    "@enact/spotlight": "^5.5.0",
+    "@enact/ui": "^5.5.0",
     "classnames": "^2.5.1",
     "prop-types": "^15.8.1",
     "ramda": "^0.32.0",
-    "react": "^19.2.4"
+    "react": "^19.2.6"
   },
   "peerDependencies": {
     "ilib": "^14.21.0 || ^14.21.0-webos1"
   },
   "devDependencies": {
-    "ilib": "^14.21.2"
+    "ilib": "^14.22.0"
   }
 }
