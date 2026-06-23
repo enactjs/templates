@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/globals */
 import '@testing-library/jest-dom';
 import {render, screen} from '@testing-library/react';
 
